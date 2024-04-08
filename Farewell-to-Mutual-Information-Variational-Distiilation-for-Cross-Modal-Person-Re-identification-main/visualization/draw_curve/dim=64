@@ -1,0 +1,635 @@
+/home/txd/Variational Distillation/data/sysu
+SYSU dataset loaded
+  subset               |   # ids  | # images
+  ---------------------+----------+---------
+  train                |      295 |    30105
+  val                  |      100 |     4062
+  trainval             |      395 |    34167
+  query                |       96 |      384
+  gallery              |       96 |     6775
+  num of RGB and IR    |    22258 |    11909
+Namespace(Associate_loss=0.2, CE_loss=1, CML_loss=8, D_loss=0.75, K_step=5, Triplet_loss=1, VDB_loss=0.35, VML_loss=2, VSD_loss=2, alpha_1=2.2, alpha_2=2.0, arch='baseline', batch_size=64, begin_test=100, combine_trainval=True, data_dir='/home/txd/Variational Distillation/data', dataset='sysu', dist_metric='euclidean', dropout=0, epochs=360, epsilon=0.05, evaluate=False, evaluate_freq=5, features=2048, flip_prob=0.5, gamma=0.1, height=256, logs_dir='./Ablation_Exp7', lr=0.00026, margin=2.4, margin_1=0.9, margin_2=1.0, mile_stone=[210], num_instances=4, padding=0, re_prob=0.0, resume='', seed=1, split=0, start_save=100, temperature=1, use_adam=False, visible_device='0, 2', warmup_factor=0.01, warmup_iters=10, warmup_methods='linear', weight_decay=0.0005, width=128, workers=4, z_dim=64)
+Epoch: [0][24/24]	Time 15.74 (18.54)	Total Loss 23.92 (23.91)	IDE Loss 18.02 (17.97)	Triple Loss 5.62 (5.66)	CML Loss 0.000 (0.000)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [1][24/24]	Time 17.42 (20.21)	Total Loss 23.61 (23.66)	IDE Loss 18.03 (17.95)	Triple Loss 5.30 (5.43)	CML Loss 0.000 (0.000)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [2][24/24]	Time 17.55 (20.56)	Total Loss 23.48 (23.43)	IDE Loss 17.93 (17.90)	Triple Loss 5.27 (5.25)	CML Loss 0.000 (0.000)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [3][24/24]	Time 23.17 (19.36)	Total Loss 23.20 (23.17)	IDE Loss 17.85 (17.79)	Triple Loss 5.07 (5.11)	CML Loss 0.000 (0.000)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.98 (1.97)	VDB 0.66 (0.66)
+Epoch: [4][24/24]	Time 22.10 (19.20)	Total Loss 22.96 (22.86)	IDE Loss 17.78 (17.61)	Triple Loss 4.91 (4.98)	CML Loss 0.001 (0.001)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [5][24/24]	Time 17.88 (19.07)	Total Loss 22.56 (22.49)	IDE Loss 17.47 (17.36)	Triple Loss 4.83 (4.86)	CML Loss 0.001 (0.001)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [6][24/24]	Time 18.16 (19.89)	Total Loss 22.36 (22.23)	IDE Loss 17.33 (17.13)	Triple Loss 4.77 (4.83)	CML Loss 0.002 (0.001)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [7][24/24]	Time 21.49 (20.26)	Total Loss 22.28 (21.96)	IDE Loss 17.03 (16.93)	Triple Loss 4.97 (4.76)	CML Loss 0.002 (0.002)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [8][24/24]	Time 21.70 (19.66)	Total Loss 22.19 (21.76)	IDE Loss 17.15 (16.73)	Triple Loss 4.75 (4.75)	CML Loss 0.003 (0.002)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [9][24/24]	Time 11.11 (20.85)	Total Loss 21.58 (21.59)	IDE Loss 16.57 (16.53)	Triple Loss 4.73 (4.77)	CML Loss 0.003 (0.003)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [10][24/24]	Time 14.12 (20.18)	Total Loss 21.45 (21.28)	IDE Loss 16.38 (16.28)	Triple Loss 4.78 (4.71)	CML Loss 0.004 (0.004)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [11][24/24]	Time 20.04 (19.22)	Total Loss 21.32 (21.03)	IDE Loss 16.35 (16.07)	Triple Loss 4.66 (4.66)	CML Loss 0.005 (0.004)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [12][24/24]	Time 24.46 (20.91)	Total Loss 21.40 (20.82)	IDE Loss 16.33 (15.89)	Triple Loss 4.77 (4.63)	CML Loss 0.005 (0.005)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [13][24/24]	Time 19.23 (18.09)	Total Loss 20.84 (20.62)	IDE Loss 15.88 (15.72)	Triple Loss 4.65 (4.59)	CML Loss 0.006 (0.006)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [14][24/24]	Time 22.54 (20.63)	Total Loss 20.53 (20.41)	IDE Loss 15.60 (15.54)	Triple Loss 4.62 (4.56)	CML Loss 0.007 (0.006)	VSD Loss -0.030 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [15][24/24]	Time 12.51 (19.12)	Total Loss 20.36 (20.26)	IDE Loss 15.47 (15.39)	Triple Loss 4.58 (4.56)	CML Loss 0.007 (0.007)	VSD Loss -0.029 (-0.030)	VML Loss -0.015 (-0.015)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [16][24/24]	Time 15.48 (20.22)	Total Loss 20.04 (20.03)	IDE Loss 15.20 (15.18)	Triple Loss 4.51 (4.53)	CML Loss 0.008 (0.008)	VSD Loss -0.029 (-0.029)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [17][24/24]	Time 17.95 (19.98)	Total Loss 20.49 (20.00)	IDE Loss 15.45 (15.11)	Triple Loss 4.69 (4.56)	CML Loss 0.009 (0.008)	VSD Loss -0.029 (-0.029)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [18][24/24]	Time 18.14 (19.09)	Total Loss 19.95 (19.74)	IDE Loss 15.14 (14.90)	Triple Loss 4.49 (4.51)	CML Loss 0.009 (0.009)	VSD Loss -0.029 (-0.029)	VML Loss -0.015 (-0.015)	Modal Discriminator 2.00 (2.00)	VDB 0.65 (0.66)
+Epoch: [19][24/24]	Time 29.22 (20.00)	Total Loss 19.54 (19.62)	IDE Loss 14.72 (14.79)	Triple Loss 4.48 (4.49)	CML Loss 0.010 (0.010)	VSD Loss -0.029 (-0.029)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.99 (2.00)	VDB 0.66 (0.66)
+Epoch: [20][24/24]	Time 16.82 (20.24)	Total Loss 19.81 (19.37)	IDE Loss 14.87 (14.55)	Triple Loss 4.59 (4.48)	CML Loss 0.011 (0.011)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.015)	Modal Discriminator 1.99 (2.00)	VDB 0.66 (0.66)
+Epoch: [21][24/24]	Time 24.29 (19.01)	Total Loss 19.43 (19.33)	IDE Loss 14.54 (14.51)	Triple Loss 4.53 (4.46)	CML Loss 0.012 (0.011)	VSD Loss -0.029 (-0.029)	VML Loss -0.015 (-0.015)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [22][24/24]	Time 16.92 (19.60)	Total Loss 19.27 (19.07)	IDE Loss 14.39 (14.28)	Triple Loss 4.52 (4.43)	CML Loss 0.013 (0.012)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.015)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [23][24/24]	Time 8.78 (15.10)	Total Loss 19.05 (19.01)	IDE Loss 14.36 (14.22)	Triple Loss 4.34 (4.44)	CML Loss 0.014 (0.013)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.02 (2.00)	VDB 0.66 (0.66)
+Epoch: [24][24/24]	Time 10.88 (13.80)	Total Loss 19.29 (19.04)	IDE Loss 14.45 (14.19)	Triple Loss 4.48 (4.49)	CML Loss 0.012 (0.014)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.00)	VDB 0.66 (0.66)
+Epoch: [25][24/24]	Time 9.58 (11.58)	Total Loss 18.94 (18.85)	IDE Loss 14.13 (14.04)	Triple Loss 4.44 (4.43)	CML Loss 0.015 (0.014)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [26][24/24]	Time 9.36 (14.48)	Total Loss 18.66 (18.65)	IDE Loss 13.88 (13.87)	Triple Loss 4.41 (4.41)	CML Loss 0.015 (0.015)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [27][24/24]	Time 9.81 (16.97)	Total Loss 18.97 (18.57)	IDE Loss 14.04 (13.78)	Triple Loss 4.54 (4.40)	CML Loss 0.015 (0.016)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (2.00)	VDB 0.66 (0.66)
+Epoch: [28][24/24]	Time 8.16 (11.32)	Total Loss 18.55 (18.54)	IDE Loss 13.72 (13.72)	Triple Loss 4.44 (4.43)	CML Loss 0.016 (0.016)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.00)	VDB 0.66 (0.66)
+Epoch: [29][24/24]	Time 22.75 (12.59)	Total Loss 18.22 (18.38)	IDE Loss 13.53 (13.57)	Triple Loss 4.27 (4.41)	CML Loss 0.019 (0.017)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (1.99)	VDB 0.67 (0.66)
+Epoch: [30][24/24]	Time 12.52 (14.40)	Total Loss 18.54 (18.28)	IDE Loss 13.73 (13.48)	Triple Loss 4.40 (4.40)	CML Loss 0.018 (0.018)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [31][24/24]	Time 14.82 (12.17)	Total Loss 17.90 (18.15)	IDE Loss 13.18 (13.36)	Triple Loss 4.33 (4.39)	CML Loss 0.018 (0.018)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.00)	VDB 0.66 (0.66)
+Epoch: [32][24/24]	Time 10.13 (11.77)	Total Loss 17.85 (18.01)	IDE Loss 13.12 (13.22)	Triple Loss 4.33 (4.38)	CML Loss 0.019 (0.019)	VSD Loss -0.029 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [33][24/24]	Time 9.52 (14.02)	Total Loss 18.77 (17.99)	IDE Loss 13.86 (13.20)	Triple Loss 4.50 (4.38)	CML Loss 0.021 (0.019)	VSD Loss -0.028 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (1.99)	VDB 0.67 (0.66)
+Epoch: [34][24/24]	Time 13.98 (12.16)	Total Loss 17.40 (17.81)	IDE Loss 12.77 (13.03)	Triple Loss 4.22 (4.37)	CML Loss 0.021 (0.020)	VSD Loss -0.028 (-0.029)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.00)	VDB 0.66 (0.66)
+Epoch: [35][24/24]	Time 15.77 (14.12)	Total Loss 17.95 (17.74)	IDE Loss 13.19 (12.97)	Triple Loss 4.33 (4.36)	CML Loss 0.021 (0.021)	VSD Loss -0.029 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.02)	VDB 0.66 (0.66)
+Epoch: [36][24/24]	Time 11.71 (12.45)	Total Loss 17.91 (17.57)	IDE Loss 13.06 (12.79)	Triple Loss 4.41 (4.35)	CML Loss 0.023 (0.021)	VSD Loss -0.029 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (2.00)	VDB 0.66 (0.66)
+Epoch: [37][24/24]	Time 7.91 (13.00)	Total Loss 17.36 (17.49)	IDE Loss 12.56 (12.70)	Triple Loss 4.35 (4.36)	CML Loss 0.023 (0.022)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [38][24/24]	Time 7.89 (14.64)	Total Loss 17.10 (17.47)	IDE Loss 12.37 (12.71)	Triple Loss 4.28 (4.33)	CML Loss 0.025 (0.023)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.02 (2.00)	VDB 0.66 (0.66)
+Epoch: [39][24/24]	Time 20.52 (12.78)	Total Loss 17.43 (17.28)	IDE Loss 12.67 (12.52)	Triple Loss 4.33 (4.33)	CML Loss 0.024 (0.023)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [40][24/24]	Time 8.19 (15.04)	Total Loss 17.62 (17.26)	IDE Loss 12.79 (12.48)	Triple Loss 4.38 (4.35)	CML Loss 0.023 (0.023)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [41][24/24]	Time 11.25 (12.45)	Total Loss 17.07 (17.08)	IDE Loss 12.37 (12.33)	Triple Loss 4.25 (4.32)	CML Loss 0.025 (0.023)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [42][24/24]	Time 10.39 (12.37)	Total Loss 17.48 (17.11)	IDE Loss 12.63 (12.33)	Triple Loss 4.39 (4.34)	CML Loss 0.028 (0.024)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.02 (2.02)	VDB 0.66 (0.66)
+Epoch: [43][24/24]	Time 11.22 (16.22)	Total Loss 16.92 (17.09)	IDE Loss 12.18 (12.32)	Triple Loss 4.30 (4.34)	CML Loss 0.025 (0.025)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.02)	VDB 0.66 (0.66)
+Epoch: [44][24/24]	Time 10.72 (11.04)	Total Loss 17.50 (16.99)	IDE Loss 12.75 (12.22)	Triple Loss 4.26 (4.32)	CML Loss 0.030 (0.024)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [45][24/24]	Time 8.52 (14.01)	Total Loss 16.88 (16.99)	IDE Loss 12.15 (12.21)	Triple Loss 4.28 (4.33)	CML Loss 0.026 (0.026)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.02 (2.00)	VDB 0.66 (0.66)
+Epoch: [46][24/24]	Time 8.82 (13.96)	Total Loss 16.84 (16.87)	IDE Loss 12.07 (12.09)	Triple Loss 4.31 (4.32)	CML Loss 0.026 (0.026)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.01)	VDB 0.67 (0.66)
+Epoch: [47][24/24]	Time 8.30 (11.63)	Total Loss 18.01 (16.93)	IDE Loss 13.05 (12.13)	Triple Loss 4.47 (4.34)	CML Loss 0.030 (0.027)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [48][24/24]	Time 9.81 (12.27)	Total Loss 17.45 (16.75)	IDE Loss 12.52 (11.96)	Triple Loss 4.46 (4.33)	CML Loss 0.028 (0.028)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [49][24/24]	Time 11.37 (15.07)	Total Loss 16.79 (16.62)	IDE Loss 12.01 (11.83)	Triple Loss 4.31 (4.31)	CML Loss 0.027 (0.028)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.01)	VDB 0.67 (0.66)
+Epoch: [50][24/24]	Time 20.00 (13.42)	Total Loss 16.94 (16.57)	IDE Loss 12.10 (11.78)	Triple Loss 4.38 (4.32)	CML Loss 0.026 (0.028)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [51][24/24]	Time 16.60 (15.17)	Total Loss 17.00 (16.55)	IDE Loss 12.15 (11.77)	Triple Loss 4.39 (4.31)	CML Loss 0.026 (0.029)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [52][24/24]	Time 11.57 (13.36)	Total Loss 16.34 (16.43)	IDE Loss 11.56 (11.65)	Triple Loss 4.31 (4.29)	CML Loss 0.027 (0.030)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [53][24/24]	Time 16.18 (13.84)	Total Loss 15.95 (16.34)	IDE Loss 11.30 (11.56)	Triple Loss 4.15 (4.29)	CML Loss 0.031 (0.030)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [54][24/24]	Time 8.14 (12.44)	Total Loss 16.33 (16.30)	IDE Loss 11.62 (11.53)	Triple Loss 4.23 (4.27)	CML Loss 0.027 (0.030)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [55][24/24]	Time 16.24 (12.56)	Total Loss 15.66 (16.19)	IDE Loss 10.96 (11.41)	Triple Loss 4.23 (4.28)	CML Loss 0.027 (0.030)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.01 (2.00)	VDB 0.66 (0.66)
+Epoch: [56][24/24]	Time 8.13 (14.88)	Total Loss 15.97 (16.23)	IDE Loss 11.25 (11.44)	Triple Loss 4.20 (4.29)	CML Loss 0.031 (0.030)	VSD Loss -0.028 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (2.00)	VDB 0.65 (0.66)
+Epoch: [57][24/24]	Time 12.49 (12.55)	Total Loss 16.61 (16.15)	IDE Loss 11.64 (11.34)	Triple Loss 4.45 (4.29)	CML Loss 0.033 (0.033)	VSD Loss -0.027 (-0.028)	VML Loss -0.014 (-0.014)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [58][24/24]	Time 11.82 (14.27)	Total Loss 16.09 (16.04)	IDE Loss 11.30 (11.23)	Triple Loss 4.27 (4.28)	CML Loss 0.034 (0.032)	VSD Loss -0.028 (-0.027)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [59][24/24]	Time 10.14 (12.80)	Total Loss 16.59 (16.10)	IDE Loss 11.68 (11.25)	Triple Loss 4.34 (4.29)	CML Loss 0.037 (0.036)	VSD Loss -0.027 (-0.027)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [60][24/24]	Time 24.88 (15.26)	Total Loss 16.18 (16.05)	IDE Loss 11.35 (11.21)	Triple Loss 4.27 (4.29)	CML Loss 0.037 (0.034)	VSD Loss -0.027 (-0.027)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [61][24/24]	Time 23.84 (13.65)	Total Loss 15.35 (15.85)	IDE Loss 10.60 (11.06)	Triple Loss 4.23 (4.26)	CML Loss 0.032 (0.033)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.014)	Modal Discriminator 1.99 (1.99)	VDB 0.67 (0.66)
+Epoch: [62][24/24]	Time 10.08 (12.27)	Total Loss 16.67 (15.90)	IDE Loss 11.81 (11.10)	Triple Loss 4.33 (4.28)	CML Loss 0.033 (0.033)	VSD Loss -0.028 (-0.027)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [63][24/24]	Time 11.61 (15.13)	Total Loss 16.11 (15.95)	IDE Loss 11.34 (11.11)	Triple Loss 4.24 (4.29)	CML Loss 0.033 (0.034)	VSD Loss -0.027 (-0.027)	VML Loss -0.014 (-0.014)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [64][24/24]	Time 9.13 (14.73)	Total Loss 15.51 (15.89)	IDE Loss 10.72 (11.05)	Triple Loss 4.23 (4.28)	CML Loss 0.036 (0.036)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.014)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [65][24/24]	Time 9.39 (13.41)	Total Loss 16.05 (15.69)	IDE Loss 11.13 (10.88)	Triple Loss 4.33 (4.26)	CML Loss 0.041 (0.035)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.014)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [66][24/24]	Time 16.02 (16.31)	Total Loss 16.49 (15.69)	IDE Loss 11.57 (10.87)	Triple Loss 4.40 (4.25)	CML Loss 0.031 (0.038)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (1.98)	VDB 0.65 (0.66)
+Epoch: [67][24/24]	Time 19.65 (13.77)	Total Loss 16.51 (15.67)	IDE Loss 11.48 (10.83)	Triple Loss 4.45 (4.28)	CML Loss 0.038 (0.037)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (1.99)	VDB 0.66 (0.66)
+Epoch: [68][24/24]	Time 21.06 (15.08)	Total Loss 16.57 (15.91)	IDE Loss 11.54 (11.02)	Triple Loss 4.41 (4.30)	CML Loss 0.042 (0.040)	VSD Loss -0.027 (-0.027)	VML Loss -0.014 (-0.013)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [69][24/24]	Time 11.88 (13.30)	Total Loss 15.66 (15.86)	IDE Loss 10.81 (10.97)	Triple Loss 4.27 (4.31)	CML Loss 0.039 (0.039)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [70][24/24]	Time 9.71 (12.66)	Total Loss 16.41 (15.64)	IDE Loss 11.43 (10.79)	Triple Loss 4.33 (4.28)	CML Loss 0.048 (0.037)	VSD Loss -0.027 (-0.027)	VML Loss -0.014 (-0.013)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [71][24/24]	Time 7.13 (13.93)	Total Loss 15.49 (15.61)	IDE Loss 10.68 (10.76)	Triple Loss 4.25 (4.28)	CML Loss 0.035 (0.036)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [72][24/24]	Time 9.23 (13.07)	Total Loss 15.44 (15.36)	IDE Loss 10.57 (10.54)	Triple Loss 4.31 (4.26)	CML Loss 0.035 (0.035)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [73][24/24]	Time 16.05 (14.72)	Total Loss 15.62 (15.37)	IDE Loss 10.75 (10.54)	Triple Loss 4.26 (4.26)	CML Loss 0.041 (0.037)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (1.98)	VDB 0.65 (0.66)
+Epoch: [74][24/24]	Time 10.52 (12.30)	Total Loss 15.61 (15.29)	IDE Loss 10.74 (10.46)	Triple Loss 4.25 (4.24)	CML Loss 0.043 (0.039)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [75][24/24]	Time 13.18 (13.27)	Total Loss 14.93 (15.27)	IDE Loss 10.06 (10.45)	Triple Loss 4.28 (4.24)	CML Loss 0.040 (0.038)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [76][24/24]	Time 20.41 (15.73)	Total Loss 15.18 (15.18)	IDE Loss 10.29 (10.36)	Triple Loss 4.25 (4.24)	CML Loss 0.044 (0.039)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [77][24/24]	Time 12.14 (13.36)	Total Loss 17.08 (15.13)	IDE Loss 12.04 (10.28)	Triple Loss 4.47 (4.26)	CML Loss 0.037 (0.041)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [78][24/24]	Time 9.04 (14.11)	Total Loss 15.00 (15.11)	IDE Loss 10.21 (10.27)	Triple Loss 4.27 (4.25)	CML Loss 0.031 (0.040)	VSD Loss -0.026 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [79][24/24]	Time 9.16 (11.54)	Total Loss 15.74 (15.21)	IDE Loss 10.90 (10.37)	Triple Loss 4.29 (4.25)	CML Loss 0.036 (0.039)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.99 (1.98)	VDB 0.65 (0.66)
+Epoch: [80][24/24]	Time 7.75 (12.33)	Total Loss 14.95 (15.03)	IDE Loss 9.98 (10.20)	Triple Loss 4.32 (4.24)	CML Loss 0.047 (0.039)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (1.98)	VDB 0.67 (0.66)
+Epoch: [81][24/24]	Time 11.91 (13.60)	Total Loss 16.59 (14.98)	IDE Loss 11.48 (10.15)	Triple Loss 4.44 (4.24)	CML Loss 0.053 (0.040)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [82][24/24]	Time 30.94 (13.91)	Total Loss 14.92 (15.02)	IDE Loss 10.00 (10.16)	Triple Loss 4.25 (4.25)	CML Loss 0.051 (0.043)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.99 (2.00)	VDB 0.66 (0.66)
+Epoch: [83][24/24]	Time 7.80 (13.32)	Total Loss 15.05 (14.97)	IDE Loss 10.23 (10.11)	Triple Loss 4.22 (4.24)	CML Loss 0.040 (0.043)	VSD Loss -0.027 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [84][24/24]	Time 9.49 (16.20)	Total Loss 14.86 (14.96)	IDE Loss 9.97 (10.10)	Triple Loss 4.28 (4.25)	CML Loss 0.040 (0.041)	VSD Loss -0.026 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.96 (1.98)	VDB 0.65 (0.66)
+Epoch: [85][24/24]	Time 12.61 (13.22)	Total Loss 15.26 (14.85)	IDE Loss 10.35 (10.02)	Triple Loss 4.32 (4.23)	CML Loss 0.039 (0.041)	VSD Loss -0.026 (-0.027)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [86][24/24]	Time 13.30 (13.01)	Total Loss 15.04 (14.72)	IDE Loss 10.19 (9.88)	Triple Loss 4.24 (4.24)	CML Loss 0.043 (0.042)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [87][24/24]	Time 9.96 (12.32)	Total Loss 14.90 (14.62)	IDE Loss 10.14 (9.81)	Triple Loss 4.17 (4.22)	CML Loss 0.039 (0.043)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.99 (2.01)	VDB 0.66 (0.66)
+Epoch: [88][24/24]	Time 10.31 (15.69)	Total Loss 15.09 (14.55)	IDE Loss 10.18 (9.73)	Triple Loss 4.35 (4.23)	CML Loss 0.039 (0.041)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [89][24/24]	Time 13.32 (13.96)	Total Loss 14.61 (14.63)	IDE Loss 9.74 (9.79)	Triple Loss 4.22 (4.23)	CML Loss 0.045 (0.043)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [90][24/24]	Time 8.94 (11.66)	Total Loss 14.69 (14.63)	IDE Loss 9.88 (9.78)	Triple Loss 4.19 (4.23)	CML Loss 0.044 (0.042)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.99 (1.98)	VDB 0.67 (0.66)
+Epoch: [91][24/24]	Time 10.94 (19.72)	Total Loss 14.58 (14.56)	IDE Loss 9.71 (9.71)	Triple Loss 4.21 (4.23)	CML Loss 0.051 (0.043)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [92][24/24]	Time 16.32 (20.40)	Total Loss 14.48 (14.48)	IDE Loss 9.69 (9.66)	Triple Loss 4.25 (4.23)	CML Loss 0.039 (0.045)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.04 (2.04)	VDB 0.66 (0.66)
+Epoch: [93][24/24]	Time 16.89 (18.84)	Total Loss 14.79 (14.38)	IDE Loss 9.96 (9.56)	Triple Loss 4.24 (4.22)	CML Loss 0.041 (0.044)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.02 (2.02)	VDB 0.65 (0.66)
+Epoch: [94][24/24]	Time 25.14 (19.29)	Total Loss 13.86 (14.41)	IDE Loss 9.06 (9.56)	Triple Loss 4.14 (4.22)	CML Loss 0.049 (0.045)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [95][24/24]	Time 13.21 (19.08)	Total Loss 15.22 (14.42)	IDE Loss 10.33 (9.58)	Triple Loss 4.24 (4.23)	CML Loss 0.049 (0.044)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.01 (2.00)	VDB 0.66 (0.66)
+Epoch: [96][24/24]	Time 19.39 (21.37)	Total Loss 13.96 (14.28)	IDE Loss 9.15 (9.45)	Triple Loss 4.25 (4.22)	CML Loss 0.040 (0.046)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.02 (2.03)	VDB 0.66 (0.66)
+Epoch: [97][24/24]	Time 23.67 (19.98)	Total Loss 15.33 (14.37)	IDE Loss 10.42 (9.51)	Triple Loss 4.29 (4.23)	CML Loss 0.042 (0.047)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (2.00)	VDB 0.65 (0.66)
+Epoch: [98][24/24]	Time 20.42 (19.12)	Total Loss 14.40 (14.44)	IDE Loss 9.49 (9.60)	Triple Loss 4.26 (4.22)	CML Loss 0.048 (0.045)	VSD Loss -0.026 (-0.026)	VML Loss -0.012 (-0.013)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [99][24/24]	Time 19.76 (19.63)	Total Loss 14.61 (14.40)	IDE Loss 9.70 (9.50)	Triple Loss 4.23 (4.24)	CML Loss 0.057 (0.051)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.06 (2.02)	VDB 0.66 (0.66)
+Epoch: [100][24/24]	Time 8.28 (19.46)	Total Loss 14.47 (14.29)	IDE Loss 9.59 (9.43)	Triple Loss 4.23 (4.23)	CML Loss 0.047 (0.046)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.00 (2.01)	VDB 0.67 (0.66)
+Mean AP: 39.05%
+CMC Scores       RegDB
+  top-1         43.94%
+  top-10        84.12%
+  top-20        92.53%
+Epoch: [101][24/24]	Time 15.00 (19.83)	Total Loss 14.11 (14.16)	IDE Loss 9.30 (9.30)	Triple Loss 4.19 (4.23)	CML Loss 0.045 (0.046)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.01 (1.99)	VDB 0.65 (0.66)
+Epoch: [102][24/24]	Time 20.79 (19.48)	Total Loss 14.27 (14.14)	IDE Loss 9.49 (9.30)	Triple Loss 4.23 (4.22)	CML Loss 0.039 (0.044)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.02 (2.00)	VDB 0.66 (0.66)
+Epoch: [103][24/24]	Time 14.53 (18.98)	Total Loss 14.24 (13.93)	IDE Loss 9.40 (9.16)	Triple Loss 4.23 (4.20)	CML Loss 0.047 (0.042)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.06 (2.04)	VDB 0.66 (0.66)
+Epoch: [104][24/24]	Time 15.59 (19.70)	Total Loss 14.28 (13.98)	IDE Loss 9.40 (9.15)	Triple Loss 4.24 (4.22)	CML Loss 0.045 (0.045)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.98 (2.02)	VDB 0.66 (0.66)
+Epoch: [105][24/24]	Time 11.59 (19.42)	Total Loss 13.98 (13.95)	IDE Loss 9.16 (9.10)	Triple Loss 4.20 (4.22)	CML Loss 0.044 (0.045)	VSD Loss -0.025 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.99 (1.97)	VDB 0.66 (0.66)
+Mean AP: 39.71%
+CMC Scores       RegDB
+  top-1         45.04%
+  top-10        84.51%
+  top-20        92.66%
+Epoch: [106][24/24]	Time 26.87 (18.80)	Total Loss 14.17 (13.95)	IDE Loss 9.28 (9.10)	Triple Loss 4.27 (4.20)	CML Loss 0.045 (0.047)	VSD Loss -0.025 (-0.026)	VML Loss -0.012 (-0.013)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [107][24/24]	Time 28.39 (19.37)	Total Loss 13.90 (13.92)	IDE Loss 9.05 (9.08)	Triple Loss 4.18 (4.20)	CML Loss 0.051 (0.048)	VSD Loss -0.025 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [108][24/24]	Time 19.92 (18.38)	Total Loss 13.92 (13.97)	IDE Loss 9.05 (9.10)	Triple Loss 4.21 (4.21)	CML Loss 0.048 (0.049)	VSD Loss -0.026 (-0.026)	VML Loss -0.013 (-0.013)	Modal Discriminator 1.97 (2.00)	VDB 0.66 (0.66)
+Epoch: [109][24/24]	Time 15.99 (19.31)	Total Loss 13.95 (13.93)	IDE Loss 9.15 (9.06)	Triple Loss 4.20 (4.20)	CML Loss 0.041 (0.049)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [110][24/24]	Time 10.47 (20.64)	Total Loss 13.85 (13.78)	IDE Loss 8.97 (8.93)	Triple Loss 4.19 (4.19)	CML Loss 0.050 (0.047)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Mean AP: 40.75%
+CMC Scores       RegDB
+  top-1         44.81%
+  top-10        85.12%
+  top-20        93.27%
+Epoch: [111][24/24]	Time 12.63 (20.95)	Total Loss 14.02 (13.74)	IDE Loss 9.05 (8.89)	Triple Loss 4.24 (4.19)	CML Loss 0.057 (0.048)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [112][24/24]	Time 17.63 (19.95)	Total Loss 14.24 (13.76)	IDE Loss 9.38 (8.93)	Triple Loss 4.23 (4.20)	CML Loss 0.047 (0.047)	VSD Loss -0.025 (-0.025)	VML Loss -0.013 (-0.012)	Modal Discriminator 2.00 (2.01)	VDB 0.67 (0.66)
+Epoch: [113][24/24]	Time 20.17 (21.11)	Total Loss 13.72 (13.96)	IDE Loss 8.93 (9.09)	Triple Loss 4.13 (4.22)	CML Loss 0.051 (0.049)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.01 (2.02)	VDB 0.66 (0.66)
+Epoch: [114][24/24]	Time 22.64 (21.32)	Total Loss 13.04 (13.70)	IDE Loss 8.14 (8.82)	Triple Loss 4.17 (4.21)	CML Loss 0.054 (0.049)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.96 (1.99)	VDB 0.67 (0.66)
+Epoch: [115][24/24]	Time 9.80 (16.25)	Total Loss 15.09 (13.73)	IDE Loss 10.10 (8.86)	Triple Loss 4.33 (4.20)	CML Loss 0.047 (0.049)	VSD Loss -0.026 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Mean AP: 41.01%
+CMC Scores       RegDB
+  top-1         45.33%
+  top-10        85.88%
+  top-20        93.77%
+Epoch: [116][24/24]	Time 13.91 (18.82)	Total Loss 13.82 (13.59)	IDE Loss 8.99 (8.75)	Triple Loss 4.20 (4.19)	CML Loss 0.047 (0.049)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [117][24/24]	Time 20.21 (21.04)	Total Loss 13.61 (13.64)	IDE Loss 8.80 (8.76)	Triple Loss 4.13 (4.21)	CML Loss 0.049 (0.051)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.97 (2.01)	VDB 0.67 (0.66)
+Epoch: [118][24/24]	Time 21.35 (17.18)	Total Loss 14.15 (13.61)	IDE Loss 8.92 (8.72)	Triple Loss 4.19 (4.19)	CML Loss 0.092 (0.052)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.94 (1.98)	VDB 0.66 (0.66)
+Epoch: [119][24/24]	Time 25.87 (19.81)	Total Loss 13.50 (13.72)	IDE Loss 8.66 (8.81)	Triple Loss 4.22 (4.21)	CML Loss 0.044 (0.052)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.00 (1.97)	VDB 0.65 (0.66)
+Epoch: [120][24/24]	Time 28.08 (20.97)	Total Loss 13.24 (13.53)	IDE Loss 8.29 (8.66)	Triple Loss 4.16 (4.20)	CML Loss 0.068 (0.053)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.04 (2.02)	VDB 0.66 (0.66)
+Mean AP: 39.68%
+CMC Scores       RegDB
+  top-1         45.49%
+  top-10        83.78%
+  top-20        91.82%
+Epoch: [121][24/24]	Time 25.89 (19.03)	Total Loss 13.99 (13.55)	IDE Loss 9.11 (8.68)	Triple Loss 4.26 (4.21)	CML Loss 0.046 (0.052)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.02 (2.03)	VDB 0.65 (0.66)
+Epoch: [122][24/24]	Time 23.99 (20.42)	Total Loss 13.06 (13.38)	IDE Loss 8.21 (8.49)	Triple Loss 4.17 (4.19)	CML Loss 0.049 (0.052)	VSD Loss -0.024 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.97 (1.98)	VDB 0.67 (0.66)
+Epoch: [123][24/24]	Time 27.58 (23.98)	Total Loss 13.67 (13.50)	IDE Loss 8.77 (8.60)	Triple Loss 4.25 (4.21)	CML Loss 0.044 (0.050)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.95 (1.97)	VDB 0.66 (0.66)
+Epoch: [124][24/24]	Time 26.91 (24.53)	Total Loss 13.39 (13.28)	IDE Loss 8.62 (8.44)	Triple Loss 4.18 (4.18)	CML Loss 0.041 (0.047)	VSD Loss -0.024 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [125][24/24]	Time 23.60 (23.58)	Total Loss 13.03 (13.38)	IDE Loss 8.32 (8.53)	Triple Loss 4.14 (4.20)	CML Loss 0.043 (0.049)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.05 (2.02)	VDB 0.66 (0.66)
+Mean AP: 42.06%
+CMC Scores       RegDB
+  top-1         47.33%
+  top-10        85.54%
+  top-20        93.48%
+Epoch: [126][24/24]	Time 22.38 (24.04)	Total Loss 13.84 (13.36)	IDE Loss 9.05 (8.51)	Triple Loss 4.13 (4.20)	CML Loss 0.047 (0.050)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.97 (2.01)	VDB 0.66 (0.66)
+Epoch: [127][24/24]	Time 27.27 (24.72)	Total Loss 14.21 (13.33)	IDE Loss 9.27 (8.45)	Triple Loss 4.29 (4.20)	CML Loss 0.048 (0.052)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [128][24/24]	Time 26.05 (24.74)	Total Loss 13.53 (13.33)	IDE Loss 8.71 (8.48)	Triple Loss 4.18 (4.21)	CML Loss 0.048 (0.048)	VSD Loss -0.025 (-0.025)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.02 (2.02)	VDB 0.66 (0.66)
+Epoch: [129][24/24]	Time 28.60 (25.10)	Total Loss 13.02 (13.26)	IDE Loss 8.17 (8.40)	Triple Loss 4.21 (4.20)	CML Loss 0.048 (0.049)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.02 (2.01)	VDB 0.66 (0.66)
+Epoch: [130][24/24]	Time 27.29 (25.12)	Total Loss 14.62 (13.22)	IDE Loss 9.62 (8.34)	Triple Loss 4.28 (4.20)	CML Loss 0.052 (0.050)	VSD Loss -0.025 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.96 (1.97)	VDB 0.67 (0.66)
+Mean AP: 42.77%
+CMC Scores       RegDB
+  top-1         47.49%
+  top-10        85.77%
+  top-20        93.53%
+Epoch: [131][24/24]	Time 20.05 (24.72)	Total Loss 12.80 (13.15)	IDE Loss 8.02 (8.29)	Triple Loss 4.13 (4.18)	CML Loss 0.050 (0.051)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.02 (1.98)	VDB 0.67 (0.66)
+Epoch: [132][24/24]	Time 21.71 (24.15)	Total Loss 14.18 (13.20)	IDE Loss 9.24 (8.35)	Triple Loss 4.28 (4.22)	CML Loss 0.054 (0.051)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.06 (2.06)	VDB 0.66 (0.66)
+Epoch: [133][24/24]	Time 22.69 (23.57)	Total Loss 13.63 (13.06)	IDE Loss 8.70 (8.23)	Triple Loss 4.28 (4.19)	CML Loss 0.049 (0.049)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.02 (2.04)	VDB 0.66 (0.66)
+Epoch: [134][24/24]	Time 9.14 (18.33)	Total Loss 13.75 (13.03)	IDE Loss 8.77 (8.17)	Triple Loss 4.21 (4.18)	CML Loss 0.062 (0.050)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [135][24/24]	Time 7.28 (7.31)	Total Loss 13.42 (13.36)	IDE Loss 8.43 (8.36)	Triple Loss 4.25 (4.22)	CML Loss 0.057 (0.061)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.99 (1.97)	VDB 0.66 (0.66)
+Mean AP: 40.47%
+CMC Scores       RegDB
+  top-1         44.49%
+  top-10        83.91%
+  top-20        92.16%
+Epoch: [136][24/24]	Time 5.65 (6.95)	Total Loss 13.23 (13.27)	IDE Loss 8.34 (8.32)	Triple Loss 4.19 (4.21)	CML Loss 0.054 (0.060)	VSD Loss -0.024 (-0.024)	VML Loss -0.011 (-0.012)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [137][24/24]	Time 7.10 (6.83)	Total Loss 13.12 (13.06)	IDE Loss 8.32 (8.19)	Triple Loss 4.15 (4.19)	CML Loss 0.047 (0.053)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.00 (2.02)	VDB 0.66 (0.66)
+Epoch: [138][24/24]	Time 6.00 (6.76)	Total Loss 12.64 (13.07)	IDE Loss 7.87 (8.19)	Triple Loss 4.16 (4.19)	CML Loss 0.042 (0.051)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [139][24/24]	Time 7.92 (7.22)	Total Loss 14.59 (13.06)	IDE Loss 9.48 (8.18)	Triple Loss 4.41 (4.20)	CML Loss 0.048 (0.049)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.95 (1.97)	VDB 0.66 (0.66)
+Epoch: [140][24/24]	Time 5.53 (7.13)	Total Loss 13.08 (12.95)	IDE Loss 8.12 (8.08)	Triple Loss 4.19 (4.19)	CML Loss 0.063 (0.050)	VSD Loss -0.024 (-0.024)	VML Loss -0.011 (-0.012)	Modal Discriminator 2.01 (1.98)	VDB 0.66 (0.66)
+Mean AP: 43.82%
+CMC Scores       RegDB
+  top-1         48.20%
+  top-10        86.83%
+  top-20        94.19%
+Epoch: [141][24/24]	Time 8.34 (7.30)	Total Loss 12.74 (12.72)	IDE Loss 7.92 (7.89)	Triple Loss 4.16 (4.18)	CML Loss 0.051 (0.049)	VSD Loss -0.023 (-0.024)	VML Loss -0.011 (-0.012)	Modal Discriminator 2.02 (2.01)	VDB 0.66 (0.66)
+Epoch: [142][24/24]	Time 7.45 (7.08)	Total Loss 13.07 (12.84)	IDE Loss 8.20 (7.99)	Triple Loss 4.14 (4.19)	CML Loss 0.058 (0.050)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [143][24/24]	Time 6.60 (7.43)	Total Loss 13.08 (12.73)	IDE Loss 8.21 (7.86)	Triple Loss 4.16 (4.17)	CML Loss 0.053 (0.052)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [144][24/24]	Time 7.37 (6.98)	Total Loss 13.86 (12.90)	IDE Loss 8.85 (8.00)	Triple Loss 4.25 (4.20)	CML Loss 0.060 (0.052)	VSD Loss -0.024 (-0.024)	VML Loss -0.012 (-0.012)	Modal Discriminator 1.98 (1.97)	VDB 0.65 (0.66)
+Epoch: [145][24/24]	Time 5.40 (7.19)	Total Loss 12.48 (12.82)	IDE Loss 7.68 (7.91)	Triple Loss 4.13 (4.18)	CML Loss 0.047 (0.056)	VSD Loss -0.023 (-0.024)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.96 (1.98)	VDB 0.66 (0.66)
+Mean AP: 43.08%
+CMC Scores       RegDB
+  top-1         48.07%
+  top-10        85.70%
+  top-20        93.37%
+Epoch: [146][24/24]	Time 7.47 (7.09)	Total Loss 13.18 (12.84)	IDE Loss 8.33 (7.94)	Triple Loss 4.14 (4.19)	CML Loss 0.052 (0.053)	VSD Loss -0.023 (-0.024)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [147][24/24]	Time 7.36 (6.65)	Total Loss 12.71 (12.62)	IDE Loss 7.78 (7.78)	Triple Loss 4.17 (4.17)	CML Loss 0.059 (0.050)	VSD Loss -0.023 (-0.024)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.97 (1.99)	VDB 0.67 (0.66)
+Epoch: [148][24/24]	Time 8.19 (7.04)	Total Loss 12.49 (12.67)	IDE Loss 7.72 (7.77)	Triple Loss 4.18 (4.19)	CML Loss 0.042 (0.055)	VSD Loss -0.024 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.01 (1.99)	VDB 0.66 (0.66)
+Epoch: [149][24/24]	Time 7.44 (7.27)	Total Loss 13.14 (12.57)	IDE Loss 8.28 (7.69)	Triple Loss 4.21 (4.16)	CML Loss 0.047 (0.056)	VSD Loss -0.024 (-0.023)	VML Loss -0.012 (-0.011)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [150][24/24]	Time 7.32 (6.81)	Total Loss 12.46 (12.67)	IDE Loss 7.54 (7.79)	Triple Loss 4.17 (4.16)	CML Loss 0.059 (0.055)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Mean AP: 43.16%
+CMC Scores       RegDB
+  top-1         48.86%
+  top-10        85.46%
+  top-20        92.24%
+Epoch: [151][24/24]	Time 7.83 (7.07)	Total Loss 13.40 (12.62)	IDE Loss 8.39 (7.71)	Triple Loss 4.30 (4.17)	CML Loss 0.053 (0.057)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [152][24/24]	Time 7.26 (7.14)	Total Loss 12.38 (12.59)	IDE Loss 7.37 (7.68)	Triple Loss 4.11 (4.17)	CML Loss 0.075 (0.056)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.96 (1.97)	VDB 0.66 (0.66)
+Epoch: [153][24/24]	Time 5.91 (6.75)	Total Loss 12.19 (12.52)	IDE Loss 7.36 (7.65)	Triple Loss 4.16 (4.16)	CML Loss 0.046 (0.053)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [154][24/24]	Time 5.29 (6.68)	Total Loss 12.14 (12.40)	IDE Loss 7.35 (7.56)	Triple Loss 4.08 (4.17)	CML Loss 0.054 (0.050)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.99 (1.99)	VDB 0.66 (0.66)
+Epoch: [155][24/24]	Time 8.12 (6.75)	Total Loss 12.50 (12.48)	IDE Loss 7.74 (7.64)	Triple Loss 4.17 (4.18)	CML Loss 0.041 (0.051)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Mean AP: 43.67%
+CMC Scores       RegDB
+  top-1         47.86%
+  top-10        86.14%
+  top-20        92.90%
+Epoch: [156][24/24]	Time 7.51 (7.29)	Total Loss 12.84 (12.46)	IDE Loss 7.92 (7.59)	Triple Loss 4.22 (4.17)	CML Loss 0.053 (0.053)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.99 (2.00)	VDB 0.67 (0.66)
+Epoch: [157][24/24]	Time 6.20 (7.35)	Total Loss 12.20 (12.42)	IDE Loss 7.27 (7.53)	Triple Loss 4.15 (4.17)	CML Loss 0.062 (0.054)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [158][24/24]	Time 8.42 (7.25)	Total Loss 12.40 (12.34)	IDE Loss 7.51 (7.49)	Triple Loss 4.18 (4.16)	CML Loss 0.051 (0.051)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.95 (1.97)	VDB 0.66 (0.66)
+Epoch: [159][24/24]	Time 6.29 (7.16)	Total Loss 11.57 (12.30)	IDE Loss 6.82 (7.43)	Triple Loss 4.12 (4.17)	CML Loss 0.042 (0.050)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [160][24/24]	Time 7.61 (7.42)	Total Loss 12.18 (12.32)	IDE Loss 7.36 (7.47)	Triple Loss 4.11 (4.16)	CML Loss 0.053 (0.050)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Mean AP: 43.56%
+CMC Scores       RegDB
+  top-1         46.81%
+  top-10        86.33%
+  top-20        93.61%
+Epoch: [161][24/24]	Time 7.71 (7.18)	Total Loss 12.18 (12.19)	IDE Loss 7.36 (7.33)	Triple Loss 4.11 (4.17)	CML Loss 0.053 (0.053)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.99 (2.00)	VDB 0.66 (0.66)
+Epoch: [162][24/24]	Time 6.08 (6.84)	Total Loss 12.64 (12.33)	IDE Loss 7.65 (7.46)	Triple Loss 4.20 (4.17)	CML Loss 0.065 (0.055)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [163][24/24]	Time 6.83 (6.88)	Total Loss 12.41 (12.36)	IDE Loss 7.39 (7.45)	Triple Loss 4.17 (4.18)	CML Loss 0.070 (0.057)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [164][24/24]	Time 8.21 (7.12)	Total Loss 12.75 (12.36)	IDE Loss 7.84 (7.46)	Triple Loss 4.15 (4.18)	CML Loss 0.057 (0.053)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [165][24/24]	Time 8.66 (7.39)	Total Loss 11.99 (12.23)	IDE Loss 7.11 (7.32)	Triple Loss 4.11 (4.16)	CML Loss 0.058 (0.056)	VSD Loss -0.022 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.96 (1.97)	VDB 0.66 (0.66)
+Mean AP: 43.14%
+CMC Scores       RegDB
+  top-1         46.96%
+  top-10        86.17%
+  top-20        93.37%
+Epoch: [166][24/24]	Time 7.19 (6.50)	Total Loss 13.76 (12.39)	IDE Loss 8.75 (7.50)	Triple Loss 4.24 (4.17)	CML Loss 0.063 (0.056)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [167][24/24]	Time 6.99 (6.70)	Total Loss 12.20 (12.22)	IDE Loss 7.28 (7.36)	Triple Loss 4.22 (4.18)	CML Loss 0.055 (0.053)	VSD Loss -0.023 (-0.023)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.03 (2.02)	VDB 0.66 (0.66)
+Epoch: [168][24/24]	Time 5.73 (6.59)	Total Loss 11.49 (12.02)	IDE Loss 6.68 (7.16)	Triple Loss 4.09 (4.16)	CML Loss 0.057 (0.055)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [169][24/24]	Time 7.47 (6.63)	Total Loss 12.15 (12.26)	IDE Loss 7.21 (7.34)	Triple Loss 4.13 (4.17)	CML Loss 0.066 (0.059)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [170][24/24]	Time 6.75 (6.45)	Total Loss 11.88 (12.33)	IDE Loss 7.07 (7.39)	Triple Loss 4.15 (4.18)	CML Loss 0.045 (0.058)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Mean AP: 42.16%
+CMC Scores       RegDB
+  top-1         47.91%
+  top-10        84.51%
+  top-20        92.01%
+Epoch: [171][24/24]	Time 6.80 (6.52)	Total Loss 11.85 (12.11)	IDE Loss 6.93 (7.22)	Triple Loss 4.15 (4.15)	CML Loss 0.058 (0.055)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.96 (1.97)	VDB 0.66 (0.66)
+Epoch: [172][24/24]	Time 7.08 (6.47)	Total Loss 12.01 (12.21)	IDE Loss 7.21 (7.32)	Triple Loss 4.12 (4.17)	CML Loss 0.048 (0.054)	VSD Loss -0.023 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [173][24/24]	Time 7.05 (6.49)	Total Loss 12.46 (12.09)	IDE Loss 7.55 (7.23)	Triple Loss 4.19 (4.16)	CML Loss 0.056 (0.053)	VSD Loss -0.023 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [174][24/24]	Time 6.42 (6.50)	Total Loss 13.06 (12.21)	IDE Loss 8.14 (7.35)	Triple Loss 4.21 (4.16)	CML Loss 0.054 (0.054)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [175][24/24]	Time 7.00 (6.63)	Total Loss 12.83 (12.08)	IDE Loss 7.83 (7.19)	Triple Loss 4.22 (4.17)	CML Loss 0.060 (0.054)	VSD Loss -0.023 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 1.97 (1.99)	VDB 0.65 (0.66)
+Mean AP: 43.12%
+CMC Scores       RegDB
+  top-1         47.57%
+  top-10        86.56%
+  top-20        93.95%
+Epoch: [176][24/24]	Time 7.06 (6.51)	Total Loss 12.06 (12.14)	IDE Loss 7.15 (7.20)	Triple Loss 4.15 (4.16)	CML Loss 0.061 (0.061)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (1.98)	VDB 0.67 (0.66)
+Epoch: [177][24/24]	Time 6.66 (6.41)	Total Loss 12.87 (11.97)	IDE Loss 7.83 (7.09)	Triple Loss 4.20 (4.16)	CML Loss 0.070 (0.056)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (2.00)	VDB 0.66 (0.66)
+Epoch: [178][24/24]	Time 6.29 (6.55)	Total Loss 11.56 (12.09)	IDE Loss 6.74 (7.18)	Triple Loss 4.10 (4.16)	CML Loss 0.056 (0.061)	VSD Loss -0.022 (-0.022)	VML Loss -0.010 (-0.011)	Modal Discriminator 2.00 (2.01)	VDB 0.66 (0.66)
+Epoch: [179][24/24]	Time 6.96 (6.82)	Total Loss 11.96 (12.04)	IDE Loss 7.17 (7.16)	Triple Loss 4.12 (4.16)	CML Loss 0.050 (0.055)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.00 (1.99)	VDB 0.67 (0.66)
+Epoch: [180][24/24]	Time 7.33 (6.48)	Total Loss 12.91 (11.83)	IDE Loss 7.95 (6.99)	Triple Loss 4.23 (4.15)	CML Loss 0.058 (0.052)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.011)	Modal Discriminator 2.01 (1.99)	VDB 0.65 (0.66)
+Mean AP: 44.52%
+CMC Scores       RegDB
+  top-1         48.57%
+  top-10        87.80%
+  top-20        94.08%
+Epoch: [181][24/24]	Time 5.13 (6.47)	Total Loss 11.36 (11.87)	IDE Loss 6.66 (7.04)	Triple Loss 4.14 (4.16)	CML Loss 0.037 (0.053)	VSD Loss -0.022 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.01 (2.02)	VDB 0.66 (0.66)
+Epoch: [182][24/24]	Time 7.03 (6.38)	Total Loss 12.26 (11.95)	IDE Loss 7.26 (7.09)	Triple Loss 4.19 (4.17)	CML Loss 0.065 (0.054)	VSD Loss -0.022 (-0.022)	VML Loss -0.010 (-0.011)	Modal Discriminator 1.99 (2.01)	VDB 0.66 (0.66)
+Epoch: [183][24/24]	Time 7.02 (6.45)	Total Loss 11.21 (11.93)	IDE Loss 6.40 (7.04)	Triple Loss 4.11 (4.16)	CML Loss 0.052 (0.056)	VSD Loss -0.021 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [184][24/24]	Time 6.97 (6.48)	Total Loss 12.40 (11.91)	IDE Loss 7.49 (7.02)	Triple Loss 4.22 (4.17)	CML Loss 0.053 (0.055)	VSD Loss -0.021 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.01 (1.99)	VDB 0.66 (0.66)
+Epoch: [185][24/24]	Time 7.13 (6.78)	Total Loss 11.56 (11.96)	IDE Loss 6.74 (7.08)	Triple Loss 4.13 (4.18)	CML Loss 0.056 (0.055)	VSD Loss -0.021 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.05 (2.02)	VDB 0.66 (0.66)
+Mean AP: 44.17%
+CMC Scores       RegDB
+  top-1         49.41%
+  top-10        86.96%
+  top-20        94.16%
+Epoch: [186][24/24]	Time 4.94 (6.55)	Total Loss 11.68 (11.85)	IDE Loss 6.85 (7.02)	Triple Loss 4.10 (4.17)	CML Loss 0.058 (0.052)	VSD Loss -0.021 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.02 (2.04)	VDB 0.66 (0.66)
+Epoch: [187][24/24]	Time 7.12 (6.64)	Total Loss 11.71 (12.02)	IDE Loss 6.75 (7.12)	Triple Loss 4.15 (4.18)	CML Loss 0.066 (0.056)	VSD Loss -0.021 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (2.00)	VDB 0.66 (0.66)
+Epoch: [188][24/24]	Time 7.01 (6.51)	Total Loss 12.46 (11.93)	IDE Loss 7.56 (7.04)	Triple Loss 4.19 (4.17)	CML Loss 0.054 (0.053)	VSD Loss -0.022 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.99 (1.96)	VDB 0.66 (0.66)
+Epoch: [189][24/24]	Time 7.31 (6.79)	Total Loss 11.36 (11.87)	IDE Loss 6.61 (6.98)	Triple Loss 4.12 (4.16)	CML Loss 0.042 (0.054)	VSD Loss -0.022 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.97)	VDB 0.66 (0.66)
+Epoch: [190][24/24]	Time 6.91 (6.51)	Total Loss 12.28 (11.78)	IDE Loss 7.42 (6.92)	Triple Loss 4.17 (4.15)	CML Loss 0.055 (0.055)	VSD Loss -0.022 (-0.022)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.04 (2.00)	VDB 0.66 (0.66)
+Mean AP: 44.02%
+CMC Scores       RegDB
+  top-1         49.22%
+  top-10        86.38%
+  top-20        94.43%
+Epoch: [191][24/24]	Time 5.90 (6.42)	Total Loss 11.20 (11.71)	IDE Loss 6.29 (6.86)	Triple Loss 4.16 (4.16)	CML Loss 0.062 (0.054)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.01 (2.04)	VDB 0.66 (0.66)
+Epoch: [192][24/24]	Time 7.45 (7.02)	Total Loss 12.31 (11.65)	IDE Loss 7.44 (6.78)	Triple Loss 4.19 (4.15)	CML Loss 0.049 (0.056)	VSD Loss -0.022 (-0.022)	VML Loss -0.011 (-0.010)	Modal Discriminator 1.97 (2.01)	VDB 0.65 (0.66)
+Epoch: [193][24/24]	Time 7.16 (7.08)	Total Loss 11.68 (11.50)	IDE Loss 6.76 (6.62)	Triple Loss 4.22 (4.14)	CML Loss 0.047 (0.055)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [194][24/24]	Time 7.59 (6.62)	Total Loss 11.68 (11.76)	IDE Loss 6.79 (6.84)	Triple Loss 4.12 (4.15)	CML Loss 0.060 (0.056)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (1.94)	VDB 0.66 (0.66)
+Epoch: [195][24/24]	Time 6.44 (6.42)	Total Loss 11.79 (11.72)	IDE Loss 6.87 (6.81)	Triple Loss 4.19 (4.15)	CML Loss 0.060 (0.060)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.05 (2.00)	VDB 0.66 (0.66)
+Mean AP: 45.00%
+CMC Scores       RegDB
+  top-1         49.93%
+  top-10        87.64%
+  top-20        94.50%
+Epoch: [196][24/24]	Time 7.17 (6.62)	Total Loss 11.45 (11.65)	IDE Loss 6.64 (6.80)	Triple Loss 4.14 (4.17)	CML Loss 0.055 (0.057)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.06 (2.05)	VDB 0.66 (0.66)
+Epoch: [197][24/24]	Time 5.43 (6.75)	Total Loss 12.10 (11.75)	IDE Loss 7.25 (6.88)	Triple Loss 4.14 (4.18)	CML Loss 0.052 (0.054)	VSD Loss -0.022 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (2.02)	VDB 0.66 (0.66)
+Epoch: [198][24/24]	Time 6.55 (6.63)	Total Loss 11.39 (11.58)	IDE Loss 6.59 (6.71)	Triple Loss 4.15 (4.15)	CML Loss 0.047 (0.054)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.01 (1.99)	VDB 0.65 (0.66)
+Epoch: [199][24/24]	Time 6.01 (6.56)	Total Loss 12.35 (11.59)	IDE Loss 7.32 (6.69)	Triple Loss 4.21 (4.15)	CML Loss 0.062 (0.057)	VSD Loss -0.022 (-0.021)	VML Loss -0.011 (-0.010)	Modal Discriminator 1.94 (1.97)	VDB 0.66 (0.66)
+Epoch: [200][24/24]	Time 7.74 (6.48)	Total Loss 10.89 (11.69)	IDE Loss 6.14 (6.79)	Triple Loss 4.08 (4.16)	CML Loss 0.049 (0.056)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.00 (1.97)	VDB 0.66 (0.66)
+Mean AP: 45.33%
+CMC Scores       RegDB
+  top-1         49.07%
+  top-10        88.35%
+  top-20        94.87%
+Epoch: [201][24/24]	Time 7.34 (6.76)	Total Loss 11.22 (11.51)	IDE Loss 6.35 (6.66)	Triple Loss 4.10 (4.15)	CML Loss 0.066 (0.056)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.05 (2.02)	VDB 0.66 (0.66)
+Epoch: [202][24/24]	Time 7.26 (6.58)	Total Loss 11.57 (11.49)	IDE Loss 6.54 (6.62)	Triple Loss 4.12 (4.16)	CML Loss 0.076 (0.056)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (2.02)	VDB 0.67 (0.66)
+Epoch: [203][24/24]	Time 8.38 (7.30)	Total Loss 11.94 (11.38)	IDE Loss 7.11 (6.53)	Triple Loss 4.15 (4.14)	CML Loss 0.050 (0.052)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [204][24/24]	Time 8.04 (7.30)	Total Loss 11.30 (11.36)	IDE Loss 6.50 (6.51)	Triple Loss 4.10 (4.14)	CML Loss 0.055 (0.054)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.02 (2.00)	VDB 0.65 (0.66)
+Epoch: [205][24/24]	Time 7.73 (8.14)	Total Loss 11.63 (11.27)	IDE Loss 6.70 (6.47)	Triple Loss 4.15 (4.13)	CML Loss 0.064 (0.052)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.01 (2.02)	VDB 0.66 (0.66)
+Mean AP: 46.20%
+CMC Scores       RegDB
+  top-1         52.38%
+  top-10        87.30%
+  top-20        93.66%
+Epoch: [206][24/24]	Time 7.53 (8.95)	Total Loss 11.75 (11.49)	IDE Loss 6.81 (6.61)	Triple Loss 4.17 (4.15)	CML Loss 0.059 (0.054)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [207][24/24]	Time 20.37 (10.08)	Total Loss 11.47 (11.44)	IDE Loss 6.63 (6.55)	Triple Loss 4.10 (4.15)	CML Loss 0.060 (0.057)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.03 (1.99)	VDB 0.66 (0.66)
+Epoch: [208][24/24]	Time 18.70 (17.60)	Total Loss 11.43 (11.27)	IDE Loss 6.69 (6.44)	Triple Loss 4.15 (4.14)	CML Loss 0.044 (0.054)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.05 (2.02)	VDB 0.66 (0.66)
+Epoch: [209][24/24]	Time 15.54 (14.24)	Total Loss 10.57 (11.16)	IDE Loss 5.82 (6.33)	Triple Loss 4.09 (4.14)	CML Loss 0.049 (0.054)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.02 (2.03)	VDB 0.65 (0.66)
+Epoch: [210][24/24]	Time 22.59 (15.71)	Total Loss 10.93 (10.91)	IDE Loss 6.15 (6.15)	Triple Loss 4.19 (4.13)	CML Loss 0.041 (0.047)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.01 (2.02)	VDB 0.66 (0.66)
+Mean AP: 47.60%
+CMC Scores       RegDB
+  top-1         54.30%
+  top-10        87.14%
+  top-20        93.58%
+Epoch: [211][24/24]	Time 23.83 (17.88)	Total Loss 10.80 (10.89)	IDE Loss 6.08 (6.16)	Triple Loss 4.10 (4.12)	CML Loss 0.043 (0.042)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 2.01 (2.01)	VDB 0.66 (0.66)
+Epoch: [212][24/24]	Time 14.13 (14.19)	Total Loss 10.35 (10.71)	IDE Loss 5.67 (6.01)	Triple Loss 4.05 (4.11)	CML Loss 0.044 (0.041)	VSD Loss -0.020 (-0.021)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.99 (2.00)	VDB 0.66 (0.66)
+Epoch: [213][24/24]	Time 9.31 (12.46)	Total Loss 10.94 (10.68)	IDE Loss 6.18 (5.99)	Triple Loss 4.12 (4.10)	CML Loss 0.043 (0.040)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (1.99)	VDB 0.66 (0.66)
+Epoch: [214][24/24]	Time 27.50 (15.36)	Total Loss 10.74 (10.78)	IDE Loss 6.01 (6.07)	Triple Loss 4.11 (4.11)	CML Loss 0.041 (0.039)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [215][24/24]	Time 10.17 (15.14)	Total Loss 10.03 (10.48)	IDE Loss 5.41 (5.80)	Triple Loss 4.05 (4.10)	CML Loss 0.035 (0.037)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Mean AP: 49.11%
+CMC Scores       RegDB
+  top-1         55.01%
+  top-10        87.83%
+  top-20        94.29%
+Epoch: [216][24/24]	Time 21.06 (14.54)	Total Loss 9.61 (10.55)	IDE Loss 4.99 (5.86)	Triple Loss 4.02 (4.10)	CML Loss 0.038 (0.037)	VSD Loss -0.020 (-0.021)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.98 (1.97)	VDB 0.66 (0.66)
+Epoch: [217][24/24]	Time 8.70 (15.23)	Total Loss 10.29 (10.72)	IDE Loss 5.60 (6.02)	Triple Loss 4.03 (4.11)	CML Loss 0.043 (0.036)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [218][24/24]	Time 10.69 (11.52)	Total Loss 10.20 (10.65)	IDE Loss 5.57 (5.96)	Triple Loss 4.04 (4.09)	CML Loss 0.036 (0.036)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [219][24/24]	Time 22.77 (15.55)	Total Loss 10.49 (10.59)	IDE Loss 5.82 (5.90)	Triple Loss 4.10 (4.09)	CML Loss 0.034 (0.036)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [220][24/24]	Time 8.66 (12.93)	Total Loss 10.65 (10.45)	IDE Loss 5.83 (5.78)	Triple Loss 4.18 (4.09)	CML Loss 0.041 (0.034)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Mean AP: 49.42%
+CMC Scores       RegDB
+  top-1         55.14%
+  top-10        88.46%
+  top-20        94.58%
+Epoch: [221][24/24]	Time 19.30 (14.26)	Total Loss 10.70 (10.55)	IDE Loss 5.97 (5.87)	Triple Loss 4.05 (4.09)	CML Loss 0.046 (0.035)	VSD Loss -0.020 (-0.021)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.65 (0.66)
+Epoch: [222][24/24]	Time 10.04 (14.24)	Total Loss 10.15 (10.43)	IDE Loss 5.51 (5.77)	Triple Loss 4.03 (4.08)	CML Loss 0.038 (0.033)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [223][24/24]	Time 10.46 (13.64)	Total Loss 10.00 (10.51)	IDE Loss 5.42 (5.83)	Triple Loss 4.05 (4.09)	CML Loss 0.027 (0.034)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [224][24/24]	Time 11.29 (14.28)	Total Loss 10.30 (10.40)	IDE Loss 5.67 (5.75)	Triple Loss 4.06 (4.08)	CML Loss 0.034 (0.032)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [225][24/24]	Time 6.98 (11.51)	Total Loss 10.50 (10.46)	IDE Loss 5.89 (5.80)	Triple Loss 4.06 (4.09)	CML Loss 0.030 (0.033)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Mean AP: 50.22%
+CMC Scores       RegDB
+  top-1         56.35%
+  top-10        88.88%
+  top-20        95.27%
+Epoch: [226][24/24]	Time 6.69 (7.97)	Total Loss 10.58 (10.48)	IDE Loss 5.86 (5.81)	Triple Loss 4.08 (4.09)	CML Loss 0.040 (0.034)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.94 (1.96)	VDB 0.65 (0.66)
+Epoch: [227][24/24]	Time 6.74 (8.41)	Total Loss 10.12 (10.38)	IDE Loss 5.46 (5.73)	Triple Loss 4.07 (4.08)	CML Loss 0.035 (0.033)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [228][24/24]	Time 6.26 (7.63)	Total Loss 10.24 (10.38)	IDE Loss 5.59 (5.73)	Triple Loss 4.09 (4.09)	CML Loss 0.031 (0.032)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [229][24/24]	Time 8.29 (8.36)	Total Loss 10.31 (10.47)	IDE Loss 5.62 (5.82)	Triple Loss 4.09 (4.09)	CML Loss 0.036 (0.032)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [230][24/24]	Time 8.32 (8.33)	Total Loss 9.90 (10.38)	IDE Loss 5.34 (5.73)	Triple Loss 4.06 (4.09)	CML Loss 0.025 (0.032)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Mean AP: 50.36%
+CMC Scores       RegDB
+  top-1         56.74%
+  top-10        88.93%
+  top-20        95.08%
+Epoch: [231][24/24]	Time 7.63 (8.40)	Total Loss 10.60 (10.30)	IDE Loss 5.94 (5.66)	Triple Loss 4.13 (4.08)	CML Loss 0.029 (0.032)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.67 (0.66)
+Epoch: [232][24/24]	Time 8.88 (8.35)	Total Loss 10.58 (10.36)	IDE Loss 5.94 (5.73)	Triple Loss 4.09 (4.07)	CML Loss 0.032 (0.032)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [233][24/24]	Time 8.33 (8.78)	Total Loss 10.83 (10.47)	IDE Loss 6.17 (5.82)	Triple Loss 4.07 (4.10)	CML Loss 0.038 (0.032)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (1.97)	VDB 0.67 (0.66)
+Epoch: [234][24/24]	Time 7.06 (8.06)	Total Loss 9.70 (10.37)	IDE Loss 5.15 (5.73)	Triple Loss 4.09 (4.08)	CML Loss 0.020 (0.032)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [235][24/24]	Time 5.61 (6.83)	Total Loss 10.49 (10.33)	IDE Loss 5.88 (5.69)	Triple Loss 4.04 (4.08)	CML Loss 0.032 (0.032)	VSD Loss -0.021 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.97)	VDB 0.66 (0.66)
+Mean AP: 51.03%
+CMC Scores       RegDB
+  top-1         57.32%
+  top-10        88.82%
+  top-20        95.16%
+Epoch: [236][24/24]	Time 6.00 (7.05)	Total Loss 10.40 (10.28)	IDE Loss 5.72 (5.65)	Triple Loss 4.06 (4.08)	CML Loss 0.040 (0.031)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [237][24/24]	Time 6.27 (7.48)	Total Loss 10.58 (10.29)	IDE Loss 5.92 (5.66)	Triple Loss 4.06 (4.07)	CML Loss 0.038 (0.031)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [238][24/24]	Time 7.00 (7.61)	Total Loss 10.55 (10.22)	IDE Loss 5.90 (5.60)	Triple Loss 4.06 (4.07)	CML Loss 0.036 (0.031)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [239][24/24]	Time 5.44 (6.40)	Total Loss 10.89 (10.31)	IDE Loss 6.19 (5.68)	Triple Loss 4.12 (4.07)	CML Loss 0.035 (0.031)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [240][24/24]	Time 5.61 (6.52)	Total Loss 10.30 (10.31)	IDE Loss 5.73 (5.69)	Triple Loss 4.06 (4.08)	CML Loss 0.027 (0.031)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Mean AP: 50.81%
+CMC Scores       RegDB
+  top-1         57.06%
+  top-10        89.03%
+  top-20        95.00%
+Epoch: [241][24/24]	Time 6.31 (6.54)	Total Loss 10.83 (10.23)	IDE Loss 6.09 (5.59)	Triple Loss 4.12 (4.08)	CML Loss 0.039 (0.031)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [242][24/24]	Time 6.58 (6.54)	Total Loss 10.01 (10.08)	IDE Loss 5.43 (5.47)	Triple Loss 4.04 (4.07)	CML Loss 0.029 (0.029)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [243][24/24]	Time 6.83 (6.41)	Total Loss 9.90 (10.25)	IDE Loss 5.27 (5.62)	Triple Loss 4.07 (4.08)	CML Loss 0.032 (0.030)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [244][24/24]	Time 5.75 (6.28)	Total Loss 10.43 (10.22)	IDE Loss 5.74 (5.59)	Triple Loss 4.09 (4.07)	CML Loss 0.037 (0.031)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [245][24/24]	Time 7.01 (6.62)	Total Loss 9.89 (10.30)	IDE Loss 5.31 (5.66)	Triple Loss 4.04 (4.08)	CML Loss 0.029 (0.033)	VSD Loss -0.020 (-0.021)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Mean AP: 50.85%
+CMC Scores       RegDB
+  top-1         56.88%
+  top-10        88.85%
+  top-20        94.98%
+Epoch: [246][24/24]	Time 6.38 (6.37)	Total Loss 9.93 (10.13)	IDE Loss 5.38 (5.52)	Triple Loss 4.01 (4.07)	CML Loss 0.028 (0.029)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [247][24/24]	Time 5.77 (6.36)	Total Loss 10.53 (10.19)	IDE Loss 5.87 (5.58)	Triple Loss 4.08 (4.07)	CML Loss 0.034 (0.030)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [248][24/24]	Time 7.01 (6.42)	Total Loss 10.43 (10.17)	IDE Loss 5.79 (5.55)	Triple Loss 4.07 (4.08)	CML Loss 0.034 (0.029)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [249][24/24]	Time 7.06 (6.43)	Total Loss 9.71 (10.26)	IDE Loss 5.13 (5.64)	Triple Loss 4.03 (4.07)	CML Loss 0.031 (0.030)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.67 (0.66)
+Epoch: [250][24/24]	Time 8.17 (6.58)	Total Loss 10.14 (10.08)	IDE Loss 5.55 (5.47)	Triple Loss 4.06 (4.08)	CML Loss 0.027 (0.029)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Mean AP: 51.32%
+CMC Scores       RegDB
+  top-1         57.30%
+  top-10        89.27%
+  top-20        95.03%
+Epoch: [251][24/24]	Time 7.28 (6.32)	Total Loss 10.00 (10.02)	IDE Loss 5.43 (5.41)	Triple Loss 4.07 (4.07)	CML Loss 0.024 (0.030)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [252][24/24]	Time 7.78 (6.44)	Total Loss 10.32 (10.11)	IDE Loss 5.68 (5.50)	Triple Loss 4.11 (4.07)	CML Loss 0.027 (0.029)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [253][24/24]	Time 5.66 (6.60)	Total Loss 9.64 (10.09)	IDE Loss 5.06 (5.49)	Triple Loss 4.04 (4.07)	CML Loss 0.029 (0.029)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [254][24/24]	Time 5.83 (6.45)	Total Loss 9.63 (10.01)	IDE Loss 5.08 (5.42)	Triple Loss 4.07 (4.07)	CML Loss 0.020 (0.027)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.65 (0.66)
+Epoch: [255][24/24]	Time 6.97 (6.46)	Total Loss 10.56 (10.11)	IDE Loss 5.90 (5.50)	Triple Loss 4.07 (4.07)	CML Loss 0.035 (0.029)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Mean AP: 51.34%
+CMC Scores       RegDB
+  top-1         57.11%
+  top-10        88.77%
+  top-20        94.64%
+Epoch: [256][24/24]	Time 6.09 (6.48)	Total Loss 10.32 (10.23)	IDE Loss 5.67 (5.59)	Triple Loss 4.08 (4.08)	CML Loss 0.034 (0.031)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [257][24/24]	Time 7.03 (6.59)	Total Loss 9.82 (10.03)	IDE Loss 5.24 (5.43)	Triple Loss 4.04 (4.06)	CML Loss 0.030 (0.029)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (1.96)	VDB 0.65 (0.66)
+Epoch: [258][24/24]	Time 5.13 (6.51)	Total Loss 10.35 (10.09)	IDE Loss 5.75 (5.49)	Triple Loss 4.10 (4.07)	CML Loss 0.024 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [259][24/24]	Time 6.69 (6.36)	Total Loss 9.99 (9.99)	IDE Loss 5.39 (5.40)	Triple Loss 4.07 (4.07)	CML Loss 0.028 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [260][24/24]	Time 6.88 (6.52)	Total Loss 9.77 (9.99)	IDE Loss 5.19 (5.39)	Triple Loss 4.08 (4.06)	CML Loss 0.023 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Mean AP: 51.04%
+CMC Scores       RegDB
+  top-1         56.98%
+  top-10        89.09%
+  top-20        94.98%
+Epoch: [261][24/24]	Time 6.80 (6.58)	Total Loss 10.89 (10.05)	IDE Loss 6.19 (5.43)	Triple Loss 4.14 (4.07)	CML Loss 0.031 (0.029)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [262][24/24]	Time 6.92 (6.62)	Total Loss 9.39 (9.97)	IDE Loss 4.90 (5.38)	Triple Loss 4.04 (4.06)	CML Loss 0.018 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [263][24/24]	Time 7.23 (6.44)	Total Loss 10.30 (10.09)	IDE Loss 5.70 (5.48)	Triple Loss 4.08 (4.07)	CML Loss 0.027 (0.029)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [264][24/24]	Time 5.48 (6.33)	Total Loss 10.03 (10.08)	IDE Loss 5.45 (5.48)	Triple Loss 4.05 (4.07)	CML Loss 0.027 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.67 (0.66)
+Epoch: [265][24/24]	Time 5.30 (6.49)	Total Loss 9.69 (9.97)	IDE Loss 5.14 (5.37)	Triple Loss 4.07 (4.06)	CML Loss 0.019 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Mean AP: 51.43%
+CMC Scores       RegDB
+  top-1         57.30%
+  top-10        89.80%
+  top-20        95.06%
+Epoch: [266][24/24]	Time 5.10 (6.33)	Total Loss 10.28 (10.13)	IDE Loss 5.62 (5.53)	Triple Loss 4.05 (4.06)	CML Loss 0.036 (0.028)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Epoch: [267][24/24]	Time 6.82 (6.64)	Total Loss 10.02 (10.09)	IDE Loss 5.47 (5.49)	Triple Loss 4.06 (4.07)	CML Loss 0.021 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [268][24/24]	Time 4.97 (6.43)	Total Loss 10.01 (10.05)	IDE Loss 5.33 (5.43)	Triple Loss 4.06 (4.06)	CML Loss 0.038 (0.031)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [269][24/24]	Time 7.10 (6.67)	Total Loss 10.68 (10.03)	IDE Loss 6.02 (5.44)	Triple Loss 4.07 (4.06)	CML Loss 0.033 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Epoch: [270][24/24]	Time 6.96 (6.48)	Total Loss 10.28 (9.96)	IDE Loss 5.67 (5.37)	Triple Loss 4.05 (4.06)	CML Loss 0.031 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Mean AP: 51.51%
+CMC Scores       RegDB
+  top-1         57.51%
+  top-10        89.69%
+  top-20        94.95%
+Epoch: [271][24/24]	Time 5.38 (6.58)	Total Loss 9.94 (9.97)	IDE Loss 5.37 (5.39)	Triple Loss 4.01 (4.05)	CML Loss 0.032 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [272][24/24]	Time 6.71 (6.31)	Total Loss 10.10 (9.97)	IDE Loss 5.52 (5.37)	Triple Loss 4.04 (4.06)	CML Loss 0.029 (0.028)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [273][24/24]	Time 6.86 (6.47)	Total Loss 9.68 (9.91)	IDE Loss 5.13 (5.33)	Triple Loss 4.03 (4.06)	CML Loss 0.026 (0.027)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.94 (1.96)	VDB 0.66 (0.66)
+Epoch: [274][24/24]	Time 6.76 (6.22)	Total Loss 10.08 (9.98)	IDE Loss 5.47 (5.40)	Triple Loss 4.07 (4.05)	CML Loss 0.030 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.97 (1.96)	VDB 0.65 (0.66)
+Epoch: [275][24/24]	Time 7.18 (6.36)	Total Loss 10.31 (10.01)	IDE Loss 5.63 (5.41)	Triple Loss 4.12 (4.06)	CML Loss 0.030 (0.029)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.65 (0.66)
+Mean AP: 52.07%
+CMC Scores       RegDB
+  top-1         58.32%
+  top-10        89.30%
+  top-20        94.90%
+Epoch: [276][24/24]	Time 5.08 (6.30)	Total Loss 10.02 (10.00)	IDE Loss 5.43 (5.40)	Triple Loss 4.03 (4.06)	CML Loss 0.030 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [277][24/24]	Time 7.25 (6.61)	Total Loss 10.01 (10.03)	IDE Loss 5.41 (5.43)	Triple Loss 4.06 (4.07)	CML Loss 0.031 (0.027)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.98 (1.95)	VDB 0.66 (0.66)
+Epoch: [278][24/24]	Time 6.84 (6.46)	Total Loss 9.55 (9.94)	IDE Loss 5.04 (5.36)	Triple Loss 4.02 (4.06)	CML Loss 0.024 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [279][24/24]	Time 7.30 (6.61)	Total Loss 10.06 (9.93)	IDE Loss 5.37 (5.32)	Triple Loss 4.09 (4.07)	CML Loss 0.037 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [280][24/24]	Time 7.50 (6.45)	Total Loss 9.29 (9.88)	IDE Loss 4.76 (5.29)	Triple Loss 4.03 (4.05)	CML Loss 0.024 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.65 (0.66)
+Mean AP: 51.30%
+CMC Scores       RegDB
+  top-1         57.27%
+  top-10        88.93%
+  top-20        94.77%
+Epoch: [281][24/24]	Time 6.85 (6.65)	Total Loss 9.62 (9.90)	IDE Loss 5.08 (5.32)	Triple Loss 4.04 (4.06)	CML Loss 0.023 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Epoch: [282][24/24]	Time 5.65 (6.35)	Total Loss 9.90 (9.95)	IDE Loss 5.33 (5.35)	Triple Loss 4.06 (4.06)	CML Loss 0.024 (0.028)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Epoch: [283][24/24]	Time 7.20 (6.64)	Total Loss 9.90 (9.89)	IDE Loss 5.35 (5.32)	Triple Loss 4.06 (4.06)	CML Loss 0.022 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [284][24/24]	Time 6.73 (6.51)	Total Loss 10.48 (10.03)	IDE Loss 5.86 (5.44)	Triple Loss 4.10 (4.06)	CML Loss 0.028 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [285][24/24]	Time 7.54 (6.49)	Total Loss 10.31 (10.04)	IDE Loss 5.69 (5.44)	Triple Loss 4.06 (4.06)	CML Loss 0.032 (0.029)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.010)	Modal Discriminator 1.97 (1.95)	VDB 0.66 (0.66)
+Mean AP: 51.80%
+CMC Scores       RegDB
+  top-1         57.77%
+  top-10        88.90%
+  top-20        94.87%
+Epoch: [286][24/24]	Time 6.38 (6.44)	Total Loss 9.48 (9.86)	IDE Loss 4.84 (5.27)	Triple Loss 4.05 (4.06)	CML Loss 0.034 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Epoch: [287][24/24]	Time 6.50 (6.42)	Total Loss 9.66 (9.82)	IDE Loss 5.08 (5.25)	Triple Loss 4.07 (4.06)	CML Loss 0.026 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [288][24/24]	Time 7.08 (6.47)	Total Loss 10.09 (9.81)	IDE Loss 5.47 (5.24)	Triple Loss 4.03 (4.05)	CML Loss 0.035 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [289][24/24]	Time 5.32 (6.36)	Total Loss 9.76 (9.86)	IDE Loss 5.18 (5.28)	Triple Loss 4.05 (4.06)	CML Loss 0.029 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.67 (0.66)
+Epoch: [290][24/24]	Time 7.11 (6.37)	Total Loss 10.20 (9.82)	IDE Loss 5.49 (5.23)	Triple Loss 4.13 (4.06)	CML Loss 0.033 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Mean AP: 52.03%
+CMC Scores       RegDB
+  top-1         57.17%
+  top-10        89.27%
+  top-20        94.64%
+Epoch: [291][24/24]	Time 7.12 (6.42)	Total Loss 10.36 (9.84)	IDE Loss 5.65 (5.24)	Triple Loss 4.09 (4.05)	CML Loss 0.037 (0.029)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.65 (0.66)
+Epoch: [292][24/24]	Time 6.74 (7.01)	Total Loss 10.26 (9.80)	IDE Loss 5.64 (5.21)	Triple Loss 4.09 (4.06)	CML Loss 0.028 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [293][24/24]	Time 10.29 (8.56)	Total Loss 10.50 (9.87)	IDE Loss 5.84 (5.28)	Triple Loss 4.04 (4.06)	CML Loss 0.038 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.65 (0.66)
+Epoch: [294][24/24]	Time 9.05 (8.66)	Total Loss 9.71 (9.80)	IDE Loss 5.16 (5.21)	Triple Loss 4.03 (4.06)	CML Loss 0.027 (0.027)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.97 (1.95)	VDB 0.66 (0.66)
+Epoch: [295][24/24]	Time 8.37 (8.60)	Total Loss 9.24 (9.91)	IDE Loss 4.67 (5.33)	Triple Loss 4.10 (4.05)	CML Loss 0.019 (0.027)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Mean AP: 51.39%
+CMC Scores       RegDB
+  top-1         57.11%
+  top-10        88.77%
+  top-20        94.53%
+Epoch: [296][24/24]	Time 8.56 (7.88)	Total Loss 9.69 (9.77)	IDE Loss 5.11 (5.21)	Triple Loss 4.09 (4.05)	CML Loss 0.023 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [297][24/24]	Time 6.29 (7.70)	Total Loss 9.68 (9.87)	IDE Loss 5.05 (5.30)	Triple Loss 4.03 (4.06)	CML Loss 0.038 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [298][24/24]	Time 6.22 (6.84)	Total Loss 9.50 (9.93)	IDE Loss 4.99 (5.34)	Triple Loss 4.02 (4.06)	CML Loss 0.023 (0.028)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [299][24/24]	Time 7.62 (7.48)	Total Loss 9.87 (9.79)	IDE Loss 5.30 (5.23)	Triple Loss 4.05 (4.05)	CML Loss 0.027 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [300][24/24]	Time 22.51 (12.04)	Total Loss 9.39 (9.68)	IDE Loss 4.83 (5.13)	Triple Loss 4.03 (4.04)	CML Loss 0.028 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Mean AP: 51.53%
+CMC Scores       RegDB
+  top-1         56.74%
+  top-10        89.27%
+  top-20        94.35%
+Epoch: [301][24/24]	Time 12.70 (16.88)	Total Loss 10.14 (9.78)	IDE Loss 5.53 (5.21)	Triple Loss 4.07 (4.05)	CML Loss 0.027 (0.027)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.94 (1.96)	VDB 0.66 (0.66)
+Epoch: [302][24/24]	Time 17.32 (16.88)	Total Loss 9.79 (9.82)	IDE Loss 5.20 (5.25)	Triple Loss 4.03 (4.05)	CML Loss 0.032 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [303][24/24]	Time 19.96 (14.99)	Total Loss 9.57 (9.76)	IDE Loss 4.97 (5.19)	Triple Loss 4.04 (4.05)	CML Loss 0.031 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [304][24/24]	Time 18.09 (17.79)	Total Loss 9.95 (9.84)	IDE Loss 5.40 (5.26)	Triple Loss 4.04 (4.06)	CML Loss 0.025 (0.028)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.65 (0.66)
+Epoch: [305][24/24]	Time 9.16 (16.70)	Total Loss 9.33 (9.79)	IDE Loss 4.77 (5.23)	Triple Loss 4.03 (4.04)	CML Loss 0.026 (0.026)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.010)	Modal Discriminator 1.94 (1.95)	VDB 0.67 (0.66)
+Mean AP: 51.76%
+CMC Scores       RegDB
+  top-1         57.11%
+  top-10        89.14%
+  top-20        94.66%
+Epoch: [306][24/24]	Time 22.72 (16.86)	Total Loss 9.46 (9.75)	IDE Loss 4.94 (5.18)	Triple Loss 4.02 (4.05)	CML Loss 0.025 (0.027)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [307][24/24]	Time 12.31 (15.84)	Total Loss 10.44 (9.75)	IDE Loss 5.77 (5.18)	Triple Loss 4.14 (4.06)	CML Loss 0.028 (0.025)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [308][24/24]	Time 13.76 (18.35)	Total Loss 9.74 (9.77)	IDE Loss 5.18 (5.20)	Triple Loss 4.04 (4.05)	CML Loss 0.026 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.65 (0.66)
+Epoch: [309][24/24]	Time 16.49 (15.80)	Total Loss 9.80 (9.74)	IDE Loss 5.24 (5.18)	Triple Loss 4.08 (4.05)	CML Loss 0.025 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.99 (1.96)	VDB 0.66 (0.66)
+Epoch: [310][24/24]	Time 10.48 (15.50)	Total Loss 9.31 (9.73)	IDE Loss 4.79 (5.17)	Triple Loss 4.02 (4.05)	CML Loss 0.024 (0.026)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Mean AP: 52.16%
+CMC Scores       RegDB
+  top-1         58.09%
+  top-10        89.64%
+  top-20        95.06%
+Epoch: [311][24/24]	Time 21.69 (16.96)	Total Loss 9.36 (9.71)	IDE Loss 4.83 (5.14)	Triple Loss 4.02 (4.05)	CML Loss 0.025 (0.026)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.67 (0.66)
+Epoch: [312][24/24]	Time 19.98 (16.76)	Total Loss 10.08 (9.71)	IDE Loss 5.45 (5.14)	Triple Loss 4.07 (4.06)	CML Loss 0.031 (0.026)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [313][24/24]	Time 25.37 (16.78)	Total Loss 10.26 (9.74)	IDE Loss 5.60 (5.18)	Triple Loss 4.12 (4.06)	CML Loss 0.027 (0.025)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.65 (0.66)
+Epoch: [314][24/24]	Time 7.56 (17.97)	Total Loss 9.40 (9.76)	IDE Loss 4.85 (5.19)	Triple Loss 4.01 (4.05)	CML Loss 0.029 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [315][24/24]	Time 19.74 (17.00)	Total Loss 9.78 (9.77)	IDE Loss 5.19 (5.20)	Triple Loss 4.07 (4.06)	CML Loss 0.027 (0.025)	VSD Loss -0.021 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.67 (0.66)
+Mean AP: 52.07%
+CMC Scores       RegDB
+  top-1         57.98%
+  top-10        89.72%
+  top-20        94.79%
+Epoch: [316][24/24]	Time 19.68 (15.22)	Total Loss 9.81 (9.78)	IDE Loss 5.22 (5.22)	Triple Loss 4.06 (4.05)	CML Loss 0.028 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [317][24/24]	Time 10.94 (19.05)	Total Loss 9.50 (9.66)	IDE Loss 4.97 (5.11)	Triple Loss 4.03 (4.05)	CML Loss 0.026 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.97 (1.96)	VDB 0.67 (0.66)
+Epoch: [318][24/24]	Time 20.89 (18.69)	Total Loss 9.82 (9.78)	IDE Loss 5.21 (5.21)	Triple Loss 4.07 (4.06)	CML Loss 0.027 (0.026)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.94 (1.96)	VDB 0.65 (0.66)
+Epoch: [319][24/24]	Time 20.53 (14.58)	Total Loss 9.43 (9.72)	IDE Loss 4.84 (5.14)	Triple Loss 4.07 (4.06)	CML Loss 0.028 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.67 (0.66)
+Epoch: [320][24/24]	Time 8.78 (16.18)	Total Loss 9.52 (9.74)	IDE Loss 4.98 (5.16)	Triple Loss 4.06 (4.06)	CML Loss 0.021 (0.026)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Mean AP: 51.92%
+CMC Scores       RegDB
+  top-1         57.59%
+  top-10        89.46%
+  top-20        95.06%
+Epoch: [321][24/24]	Time 12.16 (16.80)	Total Loss 9.55 (9.74)	IDE Loss 4.99 (5.17)	Triple Loss 4.06 (4.05)	CML Loss 0.024 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.67 (0.66)
+Epoch: [322][24/24]	Time 14.76 (17.49)	Total Loss 10.04 (9.71)	IDE Loss 5.45 (5.14)	Triple Loss 4.06 (4.05)	CML Loss 0.027 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.65 (0.66)
+Epoch: [323][24/24]	Time 14.47 (16.09)	Total Loss 10.10 (9.73)	IDE Loss 5.45 (5.15)	Triple Loss 4.06 (4.06)	CML Loss 0.034 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.94 (1.96)	VDB 0.65 (0.66)
+Epoch: [324][24/24]	Time 13.32 (18.12)	Total Loss 10.40 (9.74)	IDE Loss 5.78 (5.16)	Triple Loss 4.12 (4.05)	CML Loss 0.023 (0.026)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [325][24/24]	Time 18.58 (15.65)	Total Loss 10.12 (9.66)	IDE Loss 5.53 (5.10)	Triple Loss 4.04 (4.05)	CML Loss 0.029 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Mean AP: 51.77%
+CMC Scores       RegDB
+  top-1         57.51%
+  top-10        89.48%
+  top-20        94.43%
+Epoch: [326][24/24]	Time 22.35 (18.01)	Total Loss 9.63 (9.65)	IDE Loss 5.06 (5.07)	Triple Loss 4.07 (4.05)	CML Loss 0.024 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.95)	VDB 0.66 (0.66)
+Epoch: [327][24/24]	Time 9.27 (18.10)	Total Loss 10.53 (9.80)	IDE Loss 5.86 (5.21)	Triple Loss 4.06 (4.06)	CML Loss 0.036 (0.027)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.96 (1.95)	VDB 0.66 (0.66)
+Epoch: [328][24/24]	Time 23.52 (16.83)	Total Loss 9.75 (9.69)	IDE Loss 5.15 (5.12)	Triple Loss 4.03 (4.05)	CML Loss 0.032 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [329][24/24]	Time 23.06 (15.86)	Total Loss 10.00 (9.69)	IDE Loss 5.37 (5.11)	Triple Loss 4.07 (4.05)	CML Loss 0.031 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [330][24/24]	Time 10.35 (16.17)	Total Loss 10.41 (9.66)	IDE Loss 5.77 (5.10)	Triple Loss 4.07 (4.05)	CML Loss 0.034 (0.025)	VSD Loss -0.021 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.97 (1.95)	VDB 0.65 (0.66)
+Mean AP: 52.54%
+CMC Scores       RegDB
+  top-1         58.45%
+  top-10        89.56%
+  top-20        95.14%
+Epoch: [331][24/24]	Time 14.59 (19.33)	Total Loss 9.53 (9.71)	IDE Loss 4.97 (5.13)	Triple Loss 4.04 (4.05)	CML Loss 0.025 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.94 (1.95)	VDB 0.66 (0.66)
+Epoch: [332][24/24]	Time 17.25 (17.56)	Total Loss 10.03 (9.64)	IDE Loss 5.46 (5.09)	Triple Loss 4.05 (4.05)	CML Loss 0.027 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.96)	VDB 0.66 (0.66)
+Epoch: [333][24/24]	Time 8.35 (16.60)	Total Loss 10.12 (9.65)	IDE Loss 5.54 (5.09)	Triple Loss 4.05 (4.05)	CML Loss 0.027 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [334][24/24]	Time 10.67 (17.88)	Total Loss 9.47 (9.71)	IDE Loss 4.94 (5.15)	Triple Loss 4.02 (4.05)	CML Loss 0.025 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [335][24/24]	Time 7.58 (15.04)	Total Loss 9.71 (9.56)	IDE Loss 5.08 (5.00)	Triple Loss 4.05 (4.04)	CML Loss 0.034 (0.025)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Mean AP: 52.22%
+CMC Scores       RegDB
+  top-1         58.11%
+  top-10        89.80%
+  top-20        95.03%
+Epoch: [336][24/24]	Time 12.65 (16.17)	Total Loss 9.55 (9.61)	IDE Loss 4.99 (5.07)	Triple Loss 4.04 (4.05)	CML Loss 0.028 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.97 (1.96)	VDB 0.66 (0.66)
+Epoch: [337][24/24]	Time 10.96 (16.55)	Total Loss 9.44 (9.68)	IDE Loss 4.86 (5.13)	Triple Loss 4.05 (4.05)	CML Loss 0.027 (0.025)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [338][24/24]	Time 23.59 (17.01)	Total Loss 9.23 (9.59)	IDE Loss 4.71 (5.04)	Triple Loss 4.02 (4.05)	CML Loss 0.023 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Epoch: [339][24/24]	Time 16.61 (17.12)	Total Loss 9.81 (9.62)	IDE Loss 5.19 (5.08)	Triple Loss 4.06 (4.04)	CML Loss 0.032 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.96 (1.96)	VDB 0.66 (0.66)
+Epoch: [340][24/24]	Time 13.57 (17.29)	Total Loss 9.58 (9.55)	IDE Loss 5.06 (5.01)	Triple Loss 4.02 (4.04)	CML Loss 0.023 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.95 (1.96)	VDB 0.66 (0.66)
+Mean AP: 52.22%
+CMC Scores       RegDB
+  top-1         58.19%
+  top-10        89.30%
+  top-20        94.77%
+Epoch: [341][24/24]	Time 16.53 (17.96)	Total Loss 9.23 (9.58)	IDE Loss 4.71 (5.03)	Triple Loss 4.03 (4.05)	CML Loss 0.024 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [342][24/24]	Time 19.96 (16.00)	Total Loss 9.53 (9.58)	IDE Loss 4.99 (5.03)	Triple Loss 4.04 (4.05)	CML Loss 0.026 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.96)	VDB 0.65 (0.66)
+Epoch: [343][24/24]	Time 15.64 (15.20)	Total Loss 9.89 (9.64)	IDE Loss 5.36 (5.09)	Triple Loss 4.07 (4.05)	CML Loss 0.022 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.97)	VDB 0.66 (0.66)
+Epoch: [344][24/24]	Time 25.12 (19.57)	Total Loss 9.19 (9.60)	IDE Loss 4.67 (5.04)	Triple Loss 4.02 (4.05)	CML Loss 0.026 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.97 (1.97)	VDB 0.66 (0.66)
+Epoch: [345][24/24]	Time 15.67 (15.70)	Total Loss 9.09 (9.55)	IDE Loss 4.62 (5.00)	Triple Loss 4.03 (4.05)	CML Loss 0.019 (0.025)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.97)	VDB 0.66 (0.66)
+Mean AP: 52.52%
+CMC Scores       RegDB
+  top-1         57.82%
+  top-10        89.40%
+  top-20        94.95%
+Epoch: [346][24/24]	Time 21.23 (16.98)	Total Loss 9.23 (9.63)	IDE Loss 4.77 (5.09)	Triple Loss 4.02 (4.05)	CML Loss 0.019 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.99 (1.97)	VDB 0.66 (0.66)
+Epoch: [347][24/24]	Time 30.79 (20.09)	Total Loss 9.52 (9.56)	IDE Loss 5.03 (5.01)	Triple Loss 4.02 (4.04)	CML Loss 0.023 (0.027)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.99 (1.97)	VDB 0.66 (0.66)
+Epoch: [348][24/24]	Time 31.21 (21.72)	Total Loss 9.74 (9.61)	IDE Loss 5.24 (5.06)	Triple Loss 4.05 (4.05)	CML Loss 0.020 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.010 (-0.009)	Modal Discriminator 1.98 (1.97)	VDB 0.66 (0.66)
+Epoch: [349][24/24]	Time 29.35 (22.56)	Total Loss 9.40 (9.61)	IDE Loss 4.86 (5.06)	Triple Loss 4.05 (4.05)	CML Loss 0.024 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.97 (1.98)	VDB 0.65 (0.66)
+Epoch: [350][24/24]	Time 16.79 (20.04)	Total Loss 9.52 (9.60)	IDE Loss 5.00 (5.05)	Triple Loss 4.04 (4.05)	CML Loss 0.022 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.96 (1.98)	VDB 0.66 (0.66)
+Mean AP: 51.92%
+CMC Scores       RegDB
+  top-1         57.24%
+  top-10        89.96%
+  top-20        94.98%
+Epoch: [351][24/24]	Time 22.79 (19.39)	Total Loss 9.53 (9.63)	IDE Loss 5.02 (5.08)	Triple Loss 4.01 (4.05)	CML Loss 0.025 (0.026)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.97 (1.98)	VDB 0.66 (0.66)
+Epoch: [352][24/24]	Time 25.16 (18.93)	Total Loss 9.23 (9.53)	IDE Loss 4.70 (5.01)	Triple Loss 4.02 (4.03)	CML Loss 0.027 (0.025)	VSD Loss -0.019 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [353][24/24]	Time 14.03 (18.93)	Total Loss 9.70 (9.54)	IDE Loss 5.14 (5.02)	Triple Loss 4.06 (4.04)	CML Loss 0.025 (0.023)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [354][24/24]	Time 17.30 (18.42)	Total Loss 9.50 (9.51)	IDE Loss 5.01 (4.98)	Triple Loss 4.03 (4.05)	CML Loss 0.021 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [355][24/24]	Time 23.39 (18.11)	Total Loss 9.73 (9.46)	IDE Loss 5.17 (4.93)	Triple Loss 4.07 (4.05)	CML Loss 0.024 (0.023)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Mean AP: 52.30%
+CMC Scores       RegDB
+  top-1         57.98%
+  top-10        89.19%
+  top-20        94.56%
+Epoch: [356][24/24]	Time 10.71 (18.10)	Total Loss 9.89 (9.52)	IDE Loss 5.29 (4.99)	Triple Loss 4.05 (4.04)	CML Loss 0.033 (0.025)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.99 (1.98)	VDB 0.66 (0.66)
+Epoch: [357][24/24]	Time 17.11 (18.39)	Total Loss 9.13 (9.46)	IDE Loss 4.65 (4.93)	Triple Loss 4.05 (4.05)	CML Loss 0.018 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 1.98 (1.98)	VDB 0.66 (0.66)
+Epoch: [358][24/24]	Time 24.71 (18.76)	Total Loss 9.19 (9.48)	IDE Loss 4.71 (4.96)	Triple Loss 4.03 (4.04)	CML Loss 0.022 (0.024)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Epoch: [359][24/24]	Time 14.39 (18.46)	Total Loss 9.08 (9.41)	IDE Loss 4.65 (4.90)	Triple Loss 4.02 (4.04)	CML Loss 0.017 (0.023)	VSD Loss -0.020 (-0.020)	VML Loss -0.009 (-0.009)	Modal Discriminator 2.00 (1.99)	VDB 0.66 (0.66)
+Test with best model:
+
+ * Finished epoch 359  top1: 58.0%  best: 58.5%
+

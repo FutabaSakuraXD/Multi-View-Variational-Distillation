@@ -1,0 +1,15 @@
+criterion:
+#  name: mix_vcd_ce
+  name: weakly_lc_ce
+  ignore_index: 0
+
+dataset:
+  name: lc_semantic_nusc
+
+model:
+  imagenet_pretrain: /data/stf/codes/spvcnn/pretrain/resnet18-5c106cde.pth
+  in_channel: 4
+  proj_channel: 256
+#  name: spvcnn_swiftnet_vcd
+  name: spvcnn_swiftnet18_nusc
+  cr: 0.64

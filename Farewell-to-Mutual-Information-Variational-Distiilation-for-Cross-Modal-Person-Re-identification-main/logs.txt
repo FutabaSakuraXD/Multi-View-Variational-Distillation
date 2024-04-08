@@ -1,0 +1,8 @@
+SYSU-MM01实验:
+Exp1: 全部采用默认设置测一组。
+Exp2: 在Exp1的基础上把num_instance从4调整到8
+Exp3: 在Exp2的基础上num_instance=8, batch_size=128
+Exp4: 在Exp1的基础上试一下在trainloader上添加T.RandomGrayscale(0.5) ----> Busted
+
+RegDB实验:
+Exp1: 用MM01的Exp2设定, 即除了num_instance从4调整到8之外其余不变

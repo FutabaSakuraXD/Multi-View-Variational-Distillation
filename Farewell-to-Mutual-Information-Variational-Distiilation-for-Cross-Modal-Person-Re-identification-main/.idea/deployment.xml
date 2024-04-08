@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="txd@172.23.148.62">
+    <serverData>
+      <paths name="txd@172.23.148.62">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/txd/Farewell-to-Mutual-Information-Variational-Distiilation-for-Cross-Modal-Person-Re-identification-main" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="txd@172.23.148.62:22 key">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/txd/Farewell-to-Mutual-Information-Variational-Distiilation-for-Cross-Modal-Person-Re-identification-main" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

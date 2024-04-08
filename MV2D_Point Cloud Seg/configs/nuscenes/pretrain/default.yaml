@@ -1,0 +1,27 @@
+criterion:
+#  name: lovasz
+#  name: mix_proto_assoc2l_ce
+  name: sparse_proto_ce
+#  name: sparse_ce
+#  name: sparse_pl_ce
+  ignore_index: 0
+
+dataset:
+  name: sparse_label_lc_nusc
+#  name: weakly_pretrain_lc_assoc2l
+#  superpixel: /home/stf/workspace/codes/spvcnn.backup/runs/superpixel/superpixel
+#  sample_rate: 1.0
+#  name: prepare_sparse_label
+#  name: semantic_nusc
+#  name: sparse_label_mstep_lc_nusc
+#  name: weakly_em_lc_nusc
+
+model:
+  imagenet_pretrain: /data/stf/codes/spvcnn_nusc/spvnas/pretrain/resnet18-5c106cde.pth
+  in_channel: 4
+  proj_channel: 256
+#  name: spvcnn
+#  name: spvcnn_swiftnet_assoc2l_em_pretrain
+  name: spvcnn_swiftnet18_nusc_proto
+#  name: spvcnn_swiftnet18_nusc
+  cr: 0.64

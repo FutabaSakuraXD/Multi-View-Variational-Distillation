@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sshConfig://txd@172.23.148.62:22 key/home/txd/anaconda3/envs/txd/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="./Farewell-to-Mutual-Information-Variational-Distiilation-for-Cross-Modal-Person-Re-identification-main" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="python@sftp://txd@172.23.148.62:22/home/txd/anaconda3/envs/txd/bin/python" />
+      </list>
+    </list>
+  </component>
+</project>
